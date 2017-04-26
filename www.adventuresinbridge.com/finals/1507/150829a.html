@@ -1,0 +1,3086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.adventuresinbridge.com/finals/1507/150829a.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Apr 2017 09:27:29 GMT -->
+<head>
+<!-- Created by ACBLmerge 1.3.4 (Matthew Kidd, San Diego, CA) -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>MacCam Barometer Stratified Pairs</title>
+  
+<style type="text/css">
+#topinfo { font-family: verdana, sans-serif; font-size: 11pt; }
+a.diminishedLink:link { color: #c0c0c0; }
+.nolinkunderline { text-decoration: none; }
+
+.hoverlink { text-decoration: none; color: black }
+.hoverlink:hover { text-decoration: underline; color: blue; }
+.hoverlink:active { text-decoration: underline; color: red; }
+
+.help {
+  color: white; background-color: #07B107;
+  padding-left: 0.4em; padding-right: 0.4em;
+  border: 1px solid #666; 
+}
+
+.nowrap { white-space: nowrap; }
+
+#fsbar { border: none; border-collapse: collapse; margin-top: 1ex; margin-bottom: 1ex; }
+#fsbar .topbot td { padding-top: 10px; }
+#fsbar .middle td { padding-top: 20px; }
+#fsbar td { border: none; padding-left: 5px; }
+
+#tooltip {
+  font-family: verdana, sans-serif;
+  font-size: 80%;
+  position:absolute; display:block; padding: 5px 5px 5px 5px; background:#44d; color:#FFF;
+  border-radius: 7px; border-bottom-left-radius: 0px;
+}
+
+.ul { text-decoration: underline; }
+.ds, .hs { color: red; }
+.opplead { background-color: #FFFF80; }
+.badlead { background-color: #FFC0C0; }
+.stars { color: gold; }
+
+table { border: none; }
+table#main_table > tbody > tr > td {
+  vertical-align: top;
+  padding-bottom: 1em;
+}
+td.center {	text-align: center; }
+td.right { text-align: right; }
+.winnersCaption { caption-side: top; font-weight: bold; font-size: 14pt; margin-bottom: 1ex; }
+.winnersNotFinal, .multiSessionFinal {
+  font-style: italic; width: 47em; margin-left: auto; margin-right: auto;
+}
+.mssurl1 { font-family: verdana, sans-serif; font-size: 12pt; margin-left: 10.5em; margin-top: 0; margin-bottom: 2em; }
+.mssurl2 { font-family: verdana, sans-serif; font-size: 11pt; margin-left: 1.7em; margin-top: 0; margin-bottom: 0; }
+table.winnersWrapper {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 1em; margin-bottom: 2em;
+}
+table.winnersWrapper td { vertical-align: top; }
+table.winners {
+  font-family: Helvetica, Arial, sans-serif;
+  border-spacing: 1em 0em;
+}
+table.winners1col { font-size: 12pt; margin-left: 10em; margin-top: 1em; margin-bottom: 2em; white-space: nowrap; }
+table.winners2col { font-size: 10pt; white-space: nowrap; }
+table.winners thead { font-weight: bold; }
+td.results {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11pt;
+}
+table.results_iphone {
+  border-spacing: 1.5ex 0em;
+  font-family: Helvetica, sans-serif;
+  font-size: 10pt;
+}
+table.results_iphone > tbody > tr > td {
+  padding: 0px;
+  margin: 0px;
+}
+table.results_iphone .bn { color: blue; }
+table.board { border: none; }
+td.board_top, table.board_middle, table.board_bottom {
+  border: none;
+}
+td.north, td.south, td.west, td.east {
+  border: none;
+  width: 14ex;
+  margin-left: 0px;
+  padding-left: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: left;
+}
+td.west { width: 15ex; }
+td.east { padding-left: 1ex; }
+td.south { padding-left: 7ex; }
+td.boardnum {
+  border: none;
+  width: 3.5ex;
+  padding-right: 0px;
+  min-width: 3.5ex;
+  max-width: 3.5ex;
+  margin-right: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24pt;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: left;
+}
+td.dlrvul {
+  font-size: 11pt;
+  vertical-align: top;
+  text-align: left;
+}
+table.HCP {
+  font-size: 9pt;
+  text-align: center;
+  border: none;
+}
+table.DDmakes {
+  font-size: 11pt;
+  text-align: left;
+  margin-left: 1ex;
+}
+.ddfail {
+  font-size: small;
+  color: #5050ff;
+}
+table.lott_par_copyaids {
+  font-size: 11pt;
+}
+table.lott_par_copyaids td {
+  padding-right: 1em;
+}
+table.lott_par_copyaids td {
+  padding-right: 1em;
+}
+.eastwrapper {
+  position: relative;
+  z-index: -1;
+}
+.tablecloth {
+  /* Absolutely positioned relative to eastwrapper */
+  position: absolute;
+  width: 1.8em;
+  height: 1.8em;
+  left: -2.8em;
+  top: 1.1em;
+  background-color: green;
+}
+</style>
+
+<script type="text/javascript">window.name = window.location.origin + window.location.pathname;</script>
+
+<script type="text/javascript">
+function options() {
+  return { americanstyle: 0 };
+}
+</script>
+
+
+<script type="text/javascript">
+/*jslint browser: true, vars: true, plusplus: true, continue: true */
+"use strict";
+
+function dumphand(hand,showsymb,vert) {
+  var suitHTML = ['&spades;', '<span class="hs">&hearts;<\/span>',
+		'<span class="ds">&diams;<\/span>', '&clubs;'];
+  var suits = hand.split('.');
+  var i, ss;
+  for (i=0; i<4; i++) {
+    if (showsymb) {
+      if (suits[i].length === 0) { suits[i] = '-'; }
+      suits[i] = suitHTML[i] + suits[i];
+    }
+  }
+  if (vert) { ss = suits.join('<br>'); } else { ss = suits.join(' '); }
+  return ss;
+}
+
+function pairnameLookup(p, pair_id) {
+  var i;
+  for (i=0; i < p.length; i+= 3) {
+    if (p[i] === pair_id) { return [p[i+1], p[i+2]]; }
+  }
+  return ['', ''];
+}
+
+function flipSpecialScore(str) {
+  if (str === 'AVE+') { return 'AVE-'; }
+  if (str === 'AVE-') { return 'AVE+'; }
+  var ix = str.indexOf('|');
+  if (ix === -1) { return str; }
+  return str.substr(ix+1,str.length-ix-1) + '|' + str.substr(0,ix);
+}
+
+function scoreLookup(bb, mptop, pair_id_nodir, dir, hasContracts, hasLeads) {
+  var i;
+  var ndataPerResult = 4 + hasContracts + hasLeads;
+  if (dir === 'N') {
+    for (i=2; i < bb.length; i+= ndataPerResult) {
+      if (bb[i] === pair_id_nodir) { return [bb[i-2], bb[i-1], bb[i+1] + 'E', bb[i+2], bb[i+3]]; }
+    }
+    return [-1];
+  }
+  if (dir === 'E') {
+    for (i=3; i < bb.length; i+= ndataPerResult) {
+      if (bb[i] === pair_id_nodir) {
+        if (typeof(bb[i-3]) === 'number') {
+          return [-bb[i-3], (mptop === undefined) ? -bb[i-2] : mptop - bb[i-2], bb[i-1] + 'N', bb[i+1], bb[i+2]];    
+        }
+        return [flipSpecialScore(bb[i-3]), mptop - bb[i-2], bb[i-1] + 'N', bb[i+1], bb[i+2]];
+      }
+    }
+    return [-1];
+  }
+
+  /* For Howell movement need to check both directions for pair number. */
+  for (i=2; i < bb.length; i+= ndataPerResult) {
+    if (bb[i] === pair_id_nodir) { return [bb[i-2], bb[i-1], bb[i+1], bb[i+2], bb[i+3]]; }
+    if (bb[i+1] === pair_id_nodir) {
+      if (typeof(bb[i-2]) === 'number') {
+        return [-bb[i-2], (mptop === undefined) ? - bb[i-1] : mptop - bb[i-1], bb[i], bb[i+2], bb[i+3]];
+      }
+      return [flipSpecialScore(bb[i-2]), mptop - bb[i-1], bb[i], bb[i+2], bb[i+3]];
+    }      
+  }
+  return [-1];
+
+}
+
+function showhideClass(checkboxid, cname) {
+  // Show or hide elements with specified class name based on checkbox state.
+  // IE8 does not support getElementsByClassName(). However this function is
+  // only used for the iPhone specific format.
+  var cb = document.getElementById(checkboxid);
+  var disp = cb.checked ? '' : 'none';
+
+  document.getElementById("ACBLmerge").getElementsByClassName(cname);
+  
+  var ids = document.getElementById("ACBLmerge").getElementsByClassName(cname);
+  var i;
+  
+  for(i = 0; i < ids.length; i++) {
+    ids[i].style.display = disp;
+  }
+}
+
+function c1(hnum, west, north, east, south) {
+  var w, d, title, css, leftpad, centerpad, marginpad;
+
+  w = window.open('', '', 'width=480,height=720,scrollbars=yes');
+  if (w.focus) { w.focus(); }
+  d = w.document;
+
+  title = 'Board ' + hnum + ' Cut-and-Paste Aid';
+  css = '<style type="text/css">\n' +
+    'body, h1 {\n' +
+    '  font-family: Arial, Helvetica, sans-serif;\n' +
+    '  font-size: 11pt;\n' +
+    '  margin-top:    0.6em;\n' +
+    '  margin-bottom: 0.4em;\n' +
+    '}\n' +
+    '.ds, .hs { color: red; }\n' +
+    '.fill3x1 { width: 6em; }\n' +
+    '<\/style>\n';
+    
+  d.write('<!DOCTYPE html>\n');
+  d.write('<html lang="en">\n<head>\n');
+  d.write('<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">\n');
+  d.write('<title>' + title +'<\/title>\n' + css + '<\/head>\n\n<body>\n\n');
+
+  d.write('<h1>Horizontal North and South hands with and without suit symbols<\/h1>\n');
+  d.write(dumphand(north,1,0) + '<br>' + dumphand(south,1,0) + '<br><br>');
+  d.write(dumphand(north,0,0) + '<br>' + dumphand(south,0,0) + '<br>\n\n');
+
+  d.write('<h1>Horizontal East and West hands with and without suit symbols<\/h1>\n');
+  d.write(dumphand(east,1,0) + '<br>' + dumphand(west,1,0) + '<br><br>');
+  d.write(dumphand(east,0,0) + '<br>' + dumphand(west,0,0) + '<br>\n\n');
+
+  d.write('<h1>Bridgify ready format (West, North, East, South)<\/h1>\n');
+  d.write(west + '<br>\n' + north + '<br>\n' + east + '<br>\n' + south + '<br>\n\n');
+  
+  d.write('<h1>Deal in 3x3 HTML table<\/h1>\n');
+  d.write('<table><tr><td><\/td><td>' + dumphand(north,1,1) +
+	  '<\/td><td><\/td><\/tr>');
+  d.write('<tr><td>' + dumphand(west,1,1) + '<\/td><td><\/td><td>' +
+	  dumphand(east,1,1) + '<\/td><\/tr>');
+  d.write('<tr><td><\/td><td>' + dumphand(south,1,1) +
+	  '<\/td><td><\/td><\/tr><\/table>\n\n');
+
+  d.write('<h1>Compact preformatted deal without initial space<\/h1>\n');
+  leftpad   = '            ';
+  centerpad = '    ';
+  d.write('<pre>\n');
+  d.write(leftpad + dumphand(north,1,0) + '\n\n');
+  d.write(dumphand(west,1,0) + centerpad + dumphand(east,1,0) + '\n\n');
+  d.write(leftpad + dumphand(south,1,0) +'\n');
+  d.write('<\/pre>\n\n');
+
+  d.write('<h1>Compact preformatted deal with initial space<\/h1>\n');
+  d.write('<pre>\n');
+  marginpad = '    ';
+  leftpad  = marginpad + leftpad;
+  d.write(leftpad + dumphand(north,1,0) + '\n\n');
+  d.write(marginpad + dumphand(west,1,0) + centerpad +
+	  dumphand(east,1,0) + '\n\n');
+  d.write(leftpad + dumphand(south,1,0) +'\n');
+  d.write('<\/pre>\n\n');
+
+  d.write('<h1>Vertical West and East hands in 3x1 HTML table<\/h1>\n');
+  d.write('<table><tr><td>' + dumphand(west,1,1) +
+	  '<\/td><td class="fill3x1"><\/td><td>' +
+	  dumphand(east,1,1) + '<\/td><\/tr><\/table>\n\n');
+
+  d.write('<h1>Vertical North and South hands in 3x1 HTML table<\/h1>\n');
+  d.write('<table><tr><td>' + dumphand(north,1,1) +
+	  '<\/td><td class="fill3x1"><\/td><td>' +
+	  dumphand(south,1,1) + '<\/td><\/tr><\/table>\n\n');
+
+  d.write('<\/body><\/html>');
+
+  d.close();
+}
+
+
+function recap(pair_id) {
+  var p = pairdata();
+  var data = boarddata();
+  var top = data[0], handix = data[1];
+  var hasContracts = data[3], hasLeads = data[4], b = data[5];
+  var tmp, oneSection;
+  var section, dir, isHowell, title_pair_id, title, pair_id_nodir, pairnames;
+  var i, winwidth, w, d, ix, parenturl, parentjs, js, css;
+  var bnum, pscore, nscore, pct, cname;
+  var psum = 0, nboards = 0, npos = 0, nneg = 0;
+  var suit, suitHTML, leadFlag, leadClass, rs, evtpct;
+  // var astyle = options().americanstyle;
+  var tricks, americanstyle = options().americanstyle;
+  
+  tmp = b[0][2].charCodeAt(0);
+  oneSection = (tmp >= 48 && tmp < 59);
+
+  tmp = pair_id.charCodeAt(1);
+  section = pair_id.substr(0, (tmp >= 48 && tmp < 59) ? 1 : 2);
+
+  tmp = pair_id.charAt(pair_id.length-1);
+  isHowell = (tmp !== 'N' && tmp !== 'E');
+  if (!isHowell) { dir = tmp; } else { dir = ''; }
+
+  title_pair_id = pair_id.substring(section.length, pair_id.length - (isHowell ? 0 : 1));
+    
+  title = 'Recap for pair ' + title_pair_id;
+  if (!isHowell) { title += (dir === 'N' ? ' North-South' : ' East-West'); }
+  if (!oneSection) { title += ' (Section ' + section + ')'; }
+
+  pairnames = pairnameLookup(p, pair_id);
+
+  winwidth = 600;
+  if (hasContracts) { winwidth += 80; }
+  if (hasLeads) { winwidth += 30; }
+  w = window.open('', '', 'width=' + winwidth + ',height=720,scrollbars=yes');
+  if (w.focus) { w.focus(); }
+  d = w.document;
+  
+  parenturl = window.location.origin + window.location.pathname;
+    
+  js = '<' + 'script type="text/javascript">\n' +
+    'function gotobnum(url, bnum) {\n' +
+    '  var urlbnum = url + "#board_results" + bnum;\n' +
+    '  window.open(urlbnum, url);\n' +
+    '}\n' +
+    '<\/script>\n';
+  
+  css = '<style type="text/css">\n' +
+    'body, h1 {\n' +
+    '  font-size: 11pt;\n' +
+    '  margin-top:    0.6em;\n' +
+    '  margin-bottom: 0.4em;\n' +
+    '}\n' +
+    '.center { text-align: center; }\n' +
+    '.right { text-align: right; }\n' +
+    '.ds, .hs { color: red; }\n' +
+    '.results { border-spacing: 1em 0em; }\n' +
+    '.results thead { font-weight: bold; }\n' +
+    '.bnum { color: blue; }\n' +
+    '.bnum:hover { background-color: yellow; text-decoration: underline; }\n' +
+    '.top    { background-color: #80FF80; }\n' +
+    '.top30  { background-color: #C0FFC0; }\n' +
+    '.middle { background-color: white; }\n' +
+    '.bottom { background-color: #FF8080; }\n' +
+    '.bot30  { background-color: #FFC0C0; }\n' +
+    '.opplead { background-color: #FFFFAA; border: solid #606060 1px; padding-left: 1px; padding-right: 1px; }\n' +
+    '.badlead { background-color: #FFC0C0; border: solid #606060 1px; padding-left: 1px; padding-right: 1px; }\n' +
+    '<\/style>\n';
+
+  d.write('<!DOCTYPE html>\n');
+  d.write('<html lang="en">\n<head>\n');
+  d.write('<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">\n');
+  d.write('<meta http-equiv="Content-Style-Type" content="text/css">\n');
+  d.write('<meta http-equiv="Content-Script-Type" content="text/javascript">\n');  
+  d.write('<title>' + title +'<\/title>\n\n' + js + '\n' + css + '<\/head>\n<body>\n\n');
+
+  d.write('<h1 class="center">' + title + '<br>' + pairnames[0] + ' &amp; ' + pairnames[1] + '<\/h1>\n\n');
+  
+  /* Generate results for each board */
+  d.write('<table class="results">\n');
+  d.write('<thead><tr><td>Board<\/td><td class="right">Plus<\/td><td class="right">Minus<\/td><td class="right">Pts<\/td><td class="right">Pct<\/td>');
+  if (hasContracts) { d.write('<td>Contract<\/td>'); }
+  if (hasLeads) { d.write('<td>Ld<\/td>'); }
+  d.write('<td>Opponents<\/td><\/tr><\/thead>\n');
+  d.write('<tbody>\n');
+
+  pair_id_nodir = pair_id;
+  if (!isHowell)  { pair_id_nodir = pair_id_nodir.substr(0,pair_id_nodir.length-1); }
+  if (oneSection) { pair_id_nodir = pair_id_nodir.substr(section.length); }
+  
+  for (i=0; i < handix.length; i++) {
+    bnum = handix[i];
+    rs = scoreLookup(b[i], top, pair_id_nodir, dir, hasContracts, hasLeads);
+    if (rs[0] === -1) { continue; }
+    
+    if (typeof rs[0] === 'number') {
+      if (rs[0] >= 0) { pscore = rs[0]; nscore = ''; npos++; }
+      else { nscore = -rs[0]; pscore = ''; nneg++; }
+    }
+    else {
+      if (rs[0] === "AVE-") { pscore = ''; nscore = rs[0]; nneg++; }
+      else if (rs[0] === "AVE+") { pscore = rs[0]; nscore = ''; npos++; }
+      else { pscore = rs[0]; nscore = rs[0]; }
+    }
+
+    pct = (undefined !== top) ? 100 * rs[1] / top : undefined;
+    psum += pct; nboards++;
+    if (oneSection) { pairnames = pairnameLookup(p, pair_id.substr(0,section.length) + rs[2]); }
+    else { pairnames = pairnameLookup(p, rs[2]); }
+
+    cname = pct >= 99 ? 'top' : pct >= 70.0 ? 'top30' : pct <= 1.0 ? 'bottom' :
+      pct <= 30.0 ? 'bot30' : 'middle';
+
+    parentjs = "gotobnum('" + parenturl + "', " + bnum + ");";
+
+    d.write('<tr><td class="bnum" onclick="'+ parentjs + '">' + bnum + '<\/td><td class="right">' +
+      pscore + '<\/td><td class="right">' + nscore + '<\/td><td class="right">' + 
+      rs[1].toFixed(2) + '<\/td><td class="right ' + cname + '">' + 
+      ((pct === undefined) ? '' : pct.toFixed(2)) + '<\/td>');
+
+    if (hasContracts) {
+      if (rs[3] === 'PASS') { d.write('<td>' + 'Pass Out' + '<\/td>'); }
+      else if (rs[3] === '') { d.write('<td>' + 'Missing' + '<\/td>'); }
+      else {
+        suit = rs[3].substr(1,1);
+        if (suit === 'N') { suitHTML = 'N'; }
+        else if (suit === 'S') { suitHTML = '&spades;'; }
+        else if (suit === 'H') { suitHTML = '<span class="hs">&hearts;</span>'; }
+        else if (suit === 'D') { suitHTML = '<span class="ds">&diams;</span>'; }
+        else if (suit === 'C') { suitHTML = '&clubs;'; }
+        if (americanstyle) {
+          d.write('<td>' + rs[3].substr(0,1) + suitHTML);
+          if ( rs[3].substr(rs[3].length-3,1) === ' ' ) { 
+            if ( rs[3].substr(rs[3].length-2,1) === '-' ) { 
+              d.write(rs[3].substr(2,rs[3].length-2) + '<\/td>');
+            }
+            else {
+              tricks = parseInt(rs[3].substr(0,1),10) + parseInt(rs[3].substr(rs[3].length-1,1),10);
+              d.write(rs[3].substr(2,rs[3].length-4) + tricks + '<\/td>');
+            }
+          }
+          else {
+            d.write(rs[3].substr(2,rs[3].length-2) + ' ' + rs[3].substr(0,1) + '<\/td>');
+          }
+        }
+        else {
+          d.write('<td>' + rs[3].substr(0,1) + suitHTML + rs[3].substr(2,rs[3].length-2) + '<\/td>');
+        }
+      }
+    }
+
+    if (hasLeads) {
+      if (rs[3+hasContracts].length === 0) { d.write('<td><\/td>'); }
+      else {
+        suit = rs[3+hasContracts].substr(0,1);
+        if (suit === 'S') { suitHTML = '&spades;'; }
+        else if (suit === 'H') { suitHTML = '<span class="hs">&hearts;</span>'; }
+        else if (suit === 'D') { suitHTML = '<span class="ds">&diams;</span>'; }
+        else if (suit === 'C') { suitHTML = '&clubs;'; }
+        if (rs[3+hasContracts].length === 2) {
+          d.write('<td>' + suitHTML + rs[3+hasContracts].substr(1,1) + '<\/td>');
+        }
+        else {
+          leadFlag = rs[3+hasContracts].substr(2,1);
+          if (leadFlag === '=') { leadClass = 'opplead'; }
+          else if (leadFlag === '?') { leadClass = 'badlead'; }
+          d.write('<td><span class="' + leadClass + '">' + suitHTML +
+            rs[3+hasContracts].substr(1,1) + '<\/span><\/td>');
+        }
+      }
+    }
+    d.write('<td>' + pairnames[0] + ' - ' + pairnames[1] + '<\/td><\/tr>\n');
+  }
+  
+  d.write('<\/tbody>\n');
+  d.write('<\/table>\n\n');
+  
+  evtpct = psum / nboards;
+  d.write('<p>Session: ' + evtpct.toFixed(2) + '%&nbsp;&nbsp;&nbsp;Plus Scores: ' + npos  +
+    '&nbsp;&nbsp;&nbsp;Minus Scores: ' + nneg + '</p>\n');
+
+  d.write('<\/body><\/html>');
+
+  d.close();
+}
+
+
+
+/*jslint browser: true, vars: true, plusplus: true, continue: true */
+/*global ActiveXObject */
+"use strict";
+
+var xmlhttp = null;
+
+function CreateXmlHttpReq(handler) {
+  var xmlhttp = null;
+
+  if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); }
+  else if (window.ActiveXObject) {
+    // Fallback to Active-X but catch users with Active-X turned off.
+    try {
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (e) {}
+  }
+
+  if (xmlhttp) { xmlhttp.onreadystatechange = handler; }
+  return xmlhttp;
+}
+
+function XmlHttpGET(xmlhttp, url) {
+  try {
+    xmlhttp.open("GET.html", url, false);
+    xmlhttp.send(null);
+  } catch (e) {}
+}
+
+function resultHandler () {
+  // request is 'ready'
+  if (xmlhttp.readyState === 4) {
+    if (xmlhttp.status !== 200 && typeof console && typeof console.log) {
+        console.log("Problem retrieving the data:\n" + xmlhttp.statusText);
+    }
+  }
+}
+
+function binaryIsIn(v, num) {
+  if (v === undefined || !v.length) { return 0; }
+
+  var high = v.length - 1, low = 0, mid, element;
+
+  while (low <= high) {
+    mid = parseInt((low + high) / 2, 10);
+    element = v[mid];
+    if (element > num) { high = mid - 1; }
+    else if (element < num) { low = mid + 1; }
+    else { return 1; }
+  }
+  return 0;
+}
+
+var tooltip = ( function() {
+  var id = 'tooltip';
+  var top = 3, left = 3, maxw = 300;
+  var speed = 10, timer = 20;
+  var endalpha = 95, alpha = 0;
+  var tt, img, spn, h;
+  var ie = document.all ? true : false;
+  var FACEJSON = '../../cgi-bin/facejson.html';
+  var faceCB, faceOption, faceShow, facedir, faceids;
+  var jsonfailed;
+
+  return {
+    show:function(pnum,pname,str,width) {
+      var data;
+      if (faceOption === undefined) {
+        faceCB = document.getElementById('showfacesCB');
+        faceOption = (faceCB !== null);
+      }
+      faceShow = faceOption && faceCB.checked && !jsonfailed && pnum;
+      if (faceShow && facedir === undefined) {
+        // Get face directory and list of player numbers for players
+        // who have a face images on the server.
+        // console.log('Retrieving face data (as JSON) from ' + FACEJSON);
+        xmlhttp = new CreateXmlHttpReq(resultHandler);
+        if (xmlhttp) {
+          XmlHttpGET(xmlhttp, FACEJSON);
+          var response = xmlhttp.responseText;
+          if (window.JSON) { data = JSON.parse(response); }
+          else {
+            // Legacy handling for IE6, IE7, and IE in Quirks document mode.
+            // Sanitization (See http://tools.ietf.org/html/rfc4627)
+            data = !(/[^,:{}\[\]0-9.\-+Eaeflnr-u \n\r\t]/.test(
+              response.replace(/"(\\.|[^"\\])*"/g, ''))) && eval('(' + response + ')');
+          }    
+          facedir = data[0];
+          faceids = data[1];
+        }
+        else { jsonfailed = 1; faceShow = 0; }
+      }
+      if (faceShow) { faceShow = binaryIsIn(faceids, pnum); }
+    
+      if (tt === undefined) {
+        tt = document.createElement('div');
+        tt.setAttribute('id', id);
+        document.body.appendChild(tt);
+        tt.style.opacity = 0;
+        tt.style.filter = 'alpha(opacity=0)';
+        document.onmousemove = this.pos;
+        spn = document.createElement('span');
+        tt.appendChild(spn);
+      }
+      if (!faceShow && !str) { tt.style.display = 'none'; return; }
+      
+      if (faceShow) {
+        if (!img) { img = tt.insertBefore(document.createElement('img'), spn); }
+        img.src = facedir + '/' + pnum + '.jpg';
+        if (str) {
+          tt.style.textAlign = 'left';
+          img.align = 'left';
+          img.style.marginRight = '0.6em';
+          spn.innerHTML = pname + '<br><br>' + str;
+        }
+        else {
+          tt.style.textAlign = 'center';
+          img.align = 'center';
+          spn.innerHTML = '<br clear=all>' + pname;
+        }             
+      }
+      else {
+        if (img) { tt.removeChild(img); img = undefined; }
+        spn.innerHTML = str;
+      }
+
+      tt.style.display = 'block';
+      tt.style.width = width ? width + 'px' : 'auto';
+      if (!width && ie) { tt.style.width = tt.offsetWidth; }
+      if (tt.offsetWidth > maxw) { tt.style.width = maxw + 'px'; }
+      h = parseInt(tt.offsetHeight,10) + top;
+
+      clearInterval(tt.timer);
+      tt.timer = setInterval( function(){ tooltip.fade(1); }, timer);
+    },
+
+    pos:function(e) {
+      if (tt.style.display === 'none') { return; }
+      var u = ie ? event.clientY + document.documentElement.scrollTop  : e.pageY;
+      var l = ie ? event.clientX + document.documentElement.scrollLeft : e.pageX;
+      tt.style.top = (u - tt.offsetHeight) + 'px';
+      tt.style.left = (l + left) + 'px';
+    },
+
+    fade:function(d) {
+      var a = alpha;
+      if ((a !== endalpha && d === 1) || (a !== 0 && d === -1)) {
+        var i = speed;
+        if (endalpha - a < speed && d === 1) { i = endalpha - a; }
+        else if (alpha < speed && d === -1) { i = a; }
+        alpha = a + (i * d);
+        tt.style.opacity = alpha * 0.01;
+        tt.style.filter = 'alpha(opacity=' + alpha + ')';
+      }
+      else {
+        clearInterval(tt.timer);
+        if (d === -1) { tt.style.display = 'none'; }
+      }
+    },
+
+    hide:function() {
+      clearInterval(tt.timer);
+      tt.timer = setInterval( function(){ tooltip.fade(-1); }, timer);
+    }
+  };
+}() );
+
+
+</script>
+
+<script type="text/javascript">
+function pairdata() {
+  p = ["A10E","Roger Doughman","Suzanne LeBendig","A10N","Bunny Schmidt","Pete Watt","A11E","Sam Madison","David Oakley","A11N","Robert Rosenblum","Christine Denny","A12E","Liliane Kirchhoff","Rick Roeder","A12N","Bette Strauch","John Strauch","A1E","Kathee Bessinger","Freda Anderson","A1N","Robert Shapley","Alana Shapley","A2E","Jo Boyer","Davis Bennett","A2N","Karen Reed","Susan Cavolo","A3E","Maritha Pottenger","Budak Barkan","A3N","David Abelow","Phyllis Yates","A4E","Larry Sherman","Thomas Herzog","A4N","Marty Roth","Chris Hastie","A5E","Michael Mezin","Elaine Chan","A5N","Lynne O\'Neill","Pat Chapman","A6E","Victoria Haines","John Howard","A6N","Ursula Kantor","Robert Mann","A7E","Timothy Flaherty","Judy Rimer","A7N","Mary Green","Roy Green","A8E","Mac Busby","Anant Rathi","A8N","Alice Lane","Dorinda Lindvall","A9E","Jon Wright","Ivar Stakgold","A9N","William Grant","Andrew Loh"];
+  return p;
+}
+
+function boarddata() {
+  var hasContracts=1;
+  var hasLeads=1;
+  var top=11;
+  var handix=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27];
+  var times_played=[12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12];
+  var b=[
+[-200,0.00,"1","1","2N N -4","D3=",-100,6.00,"2","2","3H S -2","D3",-100,6.00,"3","3","3H S -2","",50,8.00,"4","4","3D W -1","HK",-110,2.50,"5","5","2D W +1","HK",140,10.00,"6","6","1S N +2","H6",-110,2.50,"7","7","2D E +1","",-110,2.50,"8","8","3D W","HK",110,9.00,"9","9","2S N","C8",-100,6.00,"10","10","2H S -2","D2",-110,2.50,"11","11","3D W","",170,11.00,"12","12","2S N +2","CJ"],
+[-500,3.00,"1","1","3D* N -2","D3",200,10.00,"2","2","3N E -4","HT",-100,9.00,"3","3","3H N -1","",-800,0.50,"4","4","4H* N -3","C4?",-500,3.00,"5","5","4H* S -2","C2=",-500,3.00,"6","6","4H* N -2","C2",-300,5.00,"7","7","4H N -3","",-200,7.00,"8","8","4H N -2","C2",-200,7.00,"9","9","4H N -2","C8=",670,11.00,"10","10","2H* N","C2",-800,0.50,"11","11","4H* N -3","",-200,7.00,"12","12","2S* S -1","DK"],
+[100,7.00,"1","1","6C W -1","SA",-300,2.00,"2","2","4H* N -2","C2",100,7.00,"3","3","3N E -1","",200,11.00,"4","4","3N E -2","H2",-300,2.00,"5","5","4H* N -2","D5",100,7.00,"6","6","3N E -1","H9",-300,2.00,"7","7","3H* N -2","DT?",100,7.00,"8","8","6C W -1","SA",100,7.00,"9","9","3N E -1","H8?",100,7.00,"10","10","5C W -1","HQ",100,7.00,"11","11","3N E -1","H9",-620,0.00,"12","12","4S W","CT"],
+[-110,5.00,"1","12","2H W","DK",-140,4.00,"2","1","2S E +1","D8",-100,6.00,"3","2","1N N -1","",-170,3.00,"4","3","2S E +2","C8",100,8.50,"5","4","4S E -1","CT",-620,1.50,"6","5","4S E","H9",-620,1.50,"7","6","4S E","H9",100,8.50,"8","7","4S E -1","C9",180,11.00,"9","8","2C* N","C8?",-790,0.00,"10","9","4S* W","H9=",100,8.50,"11","10","4S E -1","CT",100,8.50,"12","11","4S E -1","C9"],
+[-100,2.00,"1","12","1N N -1","C3?",-200,0.00,"2","1","3N* N -1","S2",120,10.50,"3","2","1N N +1","",90,6.50,"4","3","1N N","H7?",90,6.50,"5","4","1N N","C4?",-110,1.00,"6","5","2S W","H9=",90,6.50,"7","6","1N N","H5",90,6.50,"8","7","1N N","",90,6.50,"9","8","1N N","C8",120,10.50,"10","9","1N N +1","H3",90,6.50,"11","10","1N N","C9",50,3.00,"12","11","2S W -1","HT"],
+[400,11.00,"1","12","3N W -4","H3?",300,9.50,"2","1","3N W -3","",-150,3.50,"3","2","2D W +3","",-130,6.00,"4","3","3D W +1","CA",-150,3.50,"5","4","3D W +2","S5",-180,1.00,"6","5","2N W +2","S5",100,7.00,"7","6","3N W -1","H5",300,9.50,"8","7","3N W -3","H9",-150,3.50,"9","8","3D W +2","S8=",-660,0.00,"10","9","3N W +2","S5",-150,3.50,"11","10","2C W +3","S5",200,8.00,"12","11","3N E -2","S9"],
+[710,5.50,"1","11","4S N +3","C3?",1430,8.50,"2","12","6S N","",710,5.50,"3","1","4S N +3","",680,2.00,"4","2","4S S +2","HJ",1460,10.50,"5","3","6S S +1","C4",650,0.00,"6","4","4S S +1","HJ",710,5.50,"7","5","4S S +3","",680,2.00,"8","6","4S S +2","HJ",1430,8.50,"9","7","6S S","DA",1460,10.50,"10","8","6S N +1","C2?",680,2.00,"11","9","4S S +2","",710,5.50,"12","10","4S N +3","C5"],
+[-420,0.00,"1","11","4S E","H3?",-140,3.50,"2","12","3S E","",-140,3.50,"3","1","2S W +1","CA",-170,1.00,"4","2","2S E +2","S4",50,8.50,"5","3","4S W -1","CA",50,8.50,"6","4","4S W -1","CA",-140,3.50,"7","5","2S W +1","C8=",50,8.50,"8","6","4S W -1","",50,8.50,"9","7","4S W -1","CA",-140,3.50,"10","8","3S W","CA",100,11.00,"11","9","4S W -2","CA",-110,6.00,"12","10","2S E","C3"],
+[-50,5.50,"1","11","1N N -1","D3",-170,0.00,"2","12","3H W +1","",-50,5.50,"3","1","1N N -1","",-50,5.50,"4","2","2N N -1","D8=",-50,5.50,"5","3","1N N -1","D5",120,9.50,"6","4","2N S","H9?",200,11.00,"7","5","3D E -2","D3?",-50,5.50,"8","6","2S N -1","CT",-50,5.50,"9","7","1N N -1","D8=",-100,1.50,"10","8","1N N -2","D5",120,9.50,"11","9","2N S","C8",-100,1.50,"12","10","2N S -2","C7"],
+[-650,2.50,"1","10","4S E +1","",-650,2.50,"2","11","4S E +1","S4?",-620,6.00,"3","12","4S E","",-200,10.00,"4","1","3S E +2","H4",-300,7.00,"5","2","3H N -3","C5",-200,10.00,"6","3","2S E +3","HK",-200,10.00,"7","4","3S E +2","H4",-230,8.00,"8","5","3S E +3","H4",-650,2.50,"9","6","4S E +1","H8=",-650,2.50,"10","7","4S E +1","",-650,2.50,"11","8","4S E +1","",-650,2.50,"12","9","4S E +1","H4"],
+[110,5.00,"1","10","3C S","HA",-100,1.50,"2","11","2S S -2","HK",120,7.50,"3","12","1N N +1","",200,10.00,"4","1","2N W -4","C2",470,11.00,"5","2","3C* S","HA",-100,1.50,"6","3","3C S -2","",110,5.00,"7","4","2D S +1","HA",120,7.50,"8","5","1N S +1","C4",110,5.00,"9","6","3C S","DQ=",90,3.00,"10","7","1N N","S6",-150,0.00,"11","8","3C S -3","SQ",150,9.00,"12","9","1N S +2","C4"],
+[100,8.50,"1","10","3C E -2","DJ",-100,2.00,"2","11","2S N -1","CK",50,6.00,"3","12","1N W -1","SK",-90,3.50,"4","1","2C E","DJ",200,10.50,"5","2","2D W -4","SK",-90,3.50,"6","3","2C E","DJ",-200,1.00,"7","4","2N N -2","DQ",50,6.00,"8","5","2C E -1","HA",-300,0.00,"9","6","3D N -3","C8?",100,8.50,"10","7","3C E -2","DJ",50,6.00,"11","8","3C E -1","DJ",200,10.50,"12","9","3N W -4","D4"],
+[-100,5.00,"1","9","2D N -1","CA",-200,1.00,"2","10","3D N -2","CA",200,10.00,"3","11","3N W -2","",-100,5.00,"4","12","2H N -1","",100,7.50,"5","1","2N W -1","D6",200,10.00,"6","2","2N W -2","DT",-200,1.00,"7","3","2H N -2","CA",-200,1.00,"8","4","2S S -2","",-100,5.00,"9","5","2H N -1","C4=",100,7.50,"10","6","2S E -1","DQ",-140,3.00,"11","7","3S W","HA",200,10.00,"12","8","3N W -2","DT"],
+[140,8.00,"1","9","3S N","CK=",-100,0.50,"2","10","4D S -2","CA",50,5.50,"3","11","2H E -1","",300,11.00,"4","12","3H* E -2","S8",-50,3.00,"5","1","4D S -1","CA",50,5.50,"6","2","2H W -1","D9",140,8.00,"7","3","2S S +1","CA",-50,3.00,"8","4","4D S -1","CA",170,10.00,"9","5","2S S +2","D8?",-100,0.50,"10","6","3S N -2","C3",-50,3.00,"11","7","3D S -1","CA",140,8.00,"12","8","2S N +1","D4"],
+[-420,1.50,"1","9","4S E","H6=",-170,4.50,"2","10","3S W +1","CK",150,8.00,"3","11","4C N +1","",100,6.00,"4","12","4S W -2","D7",150,8.00,"5","1","4C N +1","S6",-200,3.00,"6","2","3S W +2","H7=",150,8.00,"7","3","4C N +1","",-170,4.50,"8","4","3S W +1","CK",750,10.00,"9","5","5C* N","S8=",910,11.00,"10","6","4C* N +1","D9",-420,1.50,"11","7","4S W","CK",-630,0.00,"12","8","3S* W +1","CK"],
+[100,6.00,"1","8","4H W -1","SK",-620,0.00,"2","9","4H W","SA",200,8.50,"3","10","6H W -2","SA",100,6.00,"4","11","5H E -1","SK=",-100,1.00,"5","12","5S* N -1","HT",100,6.00,"6","1","5H W -1","SA",450,10.00,"7","2","5S N","",-50,3.00,"8","3","5S N -1","H2",500,11.00,"9","4","5H* W -2","S8",-50,3.00,"10","5","5S N -1","HK",200,8.50,"11","6","5H W -2","SA",-50,3.00,"12","7","5S N -1","D8"],
+[-150,3.50,"1","8","1N W +2","S4",-150,3.50,"2","9","1N W +2","",-150,3.50,"3","10","1N W +2","",-150,3.50,"4","11","2N E +1","H6",-90,10.00,"5","12","1N W","S4",-120,7.50,"6","1","1N W +1","S4",-120,7.50,"7","2","1N W +1","S4",100,11.00,"8","3","2N E -2","H6",-120,7.50,"9","4","1N W +1","S8?",-180,0.50,"10","5","1N W +3","S4",-120,7.50,"11","6","1N W +1","S4",-180,0.50,"12","7","1N W +3","S4"],
+[-420,0.50,"1","8","4H W","CA",-170,2.00,"2","9","3H E +1","DQ",-140,4.00,"3","10","3H E","",50,10.00,"4","11","4H E -1","CJ",100,11.00,"5","12","4H* W -1","H9",-100,6.00,"6","1","3C S -1","D8","PASS",8.00,"7","2","PASS","",-140,4.00,"8","3","3H W","S4","PASS",8.00,"9","4","PASS","",-420,0.50,"10","5","4H E","CJ",-140,4.00,"11","6","3H W","","PASS",8.00,"12","7","PASS",""],
+[-150,0.00,"1","7","3N N -3","DJ?",230,8.00,"2","8","2H N +4","SK",-50,2.00,"3","9","4S S -1","",140,5.00,"4","10","3S S","DA",200,7.00,"5","11","3S S +2","H3",420,9.50,"6","12","4S S","DA",140,5.00,"7","1","3S N","H3=",480,11.00,"8","2","4S S +2","C2",-50,2.00,"9","3","4S S -1","H8",140,5.00,"10","4","3S S","H3",-50,2.00,"11","5","3S S -1","",420,9.50,"12","6","4S S",""],
+[100,7.00,"1","7","4S E -1","HK",-620,2.00,"2","8","4H W","",100,7.00,"3","9","2N E -1","HK",100,7.00,"4","10","2N E -1","C5",-620,2.00,"5","11","4H E","HK",200,10.00,"6","12","2N E -2","C4",-620,2.00,"7","1","4H W","S8=",200,10.00,"8","2","2N E -2","C5",-620,2.00,"9","3","4H E","HA",-620,2.00,"10","4","4H W","C4=",-170,5.00,"11","5","3H E +1","",200,10.00,"12","6","2N E -2","C5"],
+[-450,5.00,"1","7","4S E +1","H7",-230,10.00,"2","8","3S E +3","C8=",-450,5.00,"3","9","4S E +1","D6",-450,5.00,"4","10","4S E +1","H6",-450,5.00,"5","11","4S E +1","D6",-450,5.00,"6","12","4S E +1","ST",-450,5.00,"7","1","4S E +1","",-450,5.00,"8","2","4S E +1","D6",-200,11.00,"9","3","3S E +2","C8=",-450,5.00,"10","4","4S E +1","ST",-450,5.00,"11","5","4S E +1","",-480,0.00,"12","6","4S E +2",""],
+[-600,5.00,"1","6","3N W","S7",-120,9.00,"2","7","2N W","D8",-600,5.00,"3","8","3N W","S7",-600,5.00,"4","9","3N W","S7",-600,5.00,"5","10","3N W","S7",-660,0.50,"6","11","3N W +2","C3",-600,5.00,"7","12","3N W","",-630,2.00,"8","1","3N W +1","",-110,11.00,"9","2","2H E","S7=",-660,0.50,"10","3","3N W +2","C2?",-120,9.00,"11","4","2N W","",-120,9.00,"12","5","2N W","S7"],
+[90,8.50,"1","6","1N S","H5=",-200,0.50,"2","7","2S S -2","CA",-100,4.50,"3","8","1N S -1","",-100,4.50,"4","9","1N S -1","H2",-100,4.50,"5","10","1N S -1","S7",90,8.50,"6","11","1N S","S7",-140,2.00,"7","12","3H W","",-200,0.50,"8","1","1N S -2","S7",90,8.50,"9","2","1N S","H8=",-100,4.50,"10","3","1N S -1","S7",90,8.50,"11","4","1N S","H2",120,11.00,"12","5","1N S +1",""],
+[140,9.50,"1","6","2S N +1","C6",-120,0.00,"2","7","1N W +1","H7",110,5.50,"3","8","2S N","",110,5.50,"4","9","2S N","C6",110,5.50,"5","10","2S N","DT",-50,2.00,"6","11","3S N -1","HA",140,9.50,"7","12","2S N +1","C6",-100,1.00,"8","1","4S N -2","",100,3.00,"9","2","1N W -2","S3",110,5.50,"10","3","2S N","DT",140,9.50,"11","4","2S N +1","C6",140,9.50,"12","5","3S S",""],
+[980,9.50,"1","5","6S S","HA",-200,0.00,"2","6","6H S -4","DT",980,9.50,"3","7","6S N","",-100,1.50,"4","8","6N N -2","H6=",-50,4.50,"5","9","6S N -1","HJ",-100,1.50,"6","10","6N N -2","HJ",-50,4.50,"7","11","6S N -1","",450,7.00,"8","12","5S N","HJ",980,9.50,"9","1","6S N","H8?",980,9.50,"10","2","6S N","HJ",-50,4.50,"11","3","6S N -1","C2",-50,4.50,"12","4","6S N -1","HJ"],
+[-200,1.00,"1","5","3N N -2","S3=",110,8.00,"2","6","1H S +1","DA",-100,3.00,"3","7","2N N -1","",110,8.00,"4","8","1H S +1","DA",110,8.00,"5","9","1H S +1","DA",-100,3.00,"6","10","3N S -1","DK",110,8.00,"7","11","2H N","",110,8.00,"8","12","1H S +1","DA",120,11.00,"9","1","1N S +1","S3",-300,0.00,"10","2","3N N -3","S8",-100,3.00,"11","3","3N N -1","",90,5.00,"12","4","2C S","DA"],
+[-490,1.50,"1","5","3N W +3","DT",-490,1.50,"2","6","4N W +2","DT",-490,1.50,"3","7","3N W +3","DT",-480,6.50,"4","8","5S E +1","DA",-490,1.50,"5","9","3N W +3","DT",-480,6.50,"6","10","5S E +1","DA",50,11.00,"7","11","6N W -1","",-480,6.50,"8","12","4S W +2","CA",-480,6.50,"9","1","4S E +2","DQ",-450,10.00,"10","2","5H W","DT",-480,6.50,"11","3","4S E +2","DA",-480,6.50,"12","4","5S E +1","CJ"]
+];
+  return [top, handix, times_played, hasContracts, hasLeads, b];
+}
+</script>
+
+</head>
+
+<body>
+<div id="ACBLmerge">
+<div id="topinfo">
+<a class="nolinkunderline" href="http://lajollabridge.com/Software/ACBLmerge/ACBLmergeReport.htm"><span class="help"><strong>?</strong></span></a>&nbsp;<a href="http://lajollabridge.com/Software/ACBLmerge/ACBLmergeReport.htm">Explanation of report features</a>&nbsp;&nbsp;
+<a class="diminishedLink" href="150829m.html">View original ACBLscore output</a><br>
+Download hands in <a href="150829.pbn">PBN</a> or <a href="150829.gib">GIB</a> or <a href="150829.lin">LIN</a> format (Right click and choose &ldquo;Save Link As...&rdquo; in Firefox or &ldquo;Save Target As...&rdquo; in IE)<br>
+Jump directly to board
+ <a href="#board_results1">1</a>
+ <a href="#board_results2">2</a>
+ <a href="#board_results3">3</a>
+ <a href="#board_results4">4</a>
+ <a href="#board_results5">5</a>
+ <a href="#board_results6">6</a>
+ <a href="#board_results7">7</a>
+ <a href="#board_results8">8</a>
+ <a href="#board_results9">9</a>
+ <a href="#board_results10">10</a>
+ <a href="#board_results11">11</a>
+ <a href="#board_results12">12</a>
+ <a href="#board_results13">13</a>
+ <a href="#board_results14">14</a>
+ <a href="#board_results15">15</a>
+ <a href="#board_results16">16</a>
+ <a href="#board_results17">17</a>
+ <a href="#board_results18">18</a>
+ <a href="#board_results19">19</a>
+ <a href="#board_results20">20</a>
+ <a href="#board_results21">21</a>
+ <a href="#board_results22">22</a>
+ <a href="#board_results23">23</a>
+ <a href="#board_results24">24</a>
+ <a href="#board_results25">25</a>
+ <a href="#board_results26">26</a>
+ <a href="#board_results27">27</a>
+<table role="presentation"><tr><td>
+<table id="fsbar" role="presentation">
+<caption style="display: none">field strength bar</caption>
+<tr class="topbot"><td colspan="50"></td><td style="background-color: black"></td><td colspan="13"></td></tr>
+<tr class="middle"><td style="background-color: #00008f"></td><td style="background-color: #00009f"></td><td style="background-color: #0000af"></td><td style="background-color: #0000bf"></td><td style="background-color: #0000cf"></td><td style="background-color: #0000df"></td><td style="background-color: #0000ef"></td><td style="background-color: #0000ff"></td><td style="background-color: #0010ff"></td><td style="background-color: #0020ff"></td><td style="background-color: #0030ff"></td><td style="background-color: #0040ff"></td><td style="background-color: #0050ff"></td><td style="background-color: #0060ff"></td><td style="background-color: #0070ff"></td><td style="background-color: #0080ff"></td><td style="background-color: #008fff"></td><td style="background-color: #009fff"></td><td style="background-color: #00afff"></td><td style="background-color: #00bfff"></td><td style="background-color: #00cfff"></td><td style="background-color: #00dfff"></td><td style="background-color: #00efff"></td><td style="background-color: #00ffff"></td><td style="background-color: #10ffef"></td><td style="background-color: #20ffdf"></td><td style="background-color: #30ffcf"></td><td style="background-color: #40ffbf"></td><td style="background-color: #50ffaf"></td><td style="background-color: #60ff9f"></td><td style="background-color: #70ff8f"></td><td style="background-color: #80ff80"></td><td style="background-color: #8fff70"></td><td style="background-color: #9fff60"></td><td style="background-color: #afff50"></td><td style="background-color: #bfff40"></td><td style="background-color: #cfff30"></td><td style="background-color: #dfff20"></td><td style="background-color: #efff10"></td><td style="background-color: #ffff00"></td><td style="background-color: #ffef00"></td><td style="background-color: #ffdf00"></td><td style="background-color: #ffcf00"></td><td style="background-color: #ffbf00"></td><td style="background-color: #ffaf00"></td><td style="background-color: #ff9f00"></td><td style="background-color: #ff8f00"></td><td style="background-color: #ff8000"></td><td style="background-color: #ff7000"></td><td style="background-color: #ff6000"></td><td style="background-color: black"></td><td style="background-color: #ff4000"></td><td style="background-color: #ff3000"></td><td style="background-color: #ff2000"></td><td style="background-color: #ff1000"></td><td style="background-color: #ff0000"></td><td style="background-color: #ef0000"></td><td style="background-color: #df0000"></td><td style="background-color: #cf0000"></td><td style="background-color: #bf0000"></td><td style="background-color: #af0000"></td><td style="background-color: #9f0000"></td><td style="background-color: #8f0000"></td><td style="background-color: #800000"></td></tr>
+<tr class="topbot"><td colspan="50"></td><td style="background-color: black"></td><td colspan="13"></td></tr>
+</table>
+</td>
+<td style="padding-left: 1em">Field strength:&nbsp;&nbsp;Mean: 4572 MP&nbsp;&nbsp;Geomean: 2552 MP<br>(based on 47 players, 1 non ACBL player ignored)</td>
+</tr></table>
+
+</div>
+
+<table class="winnersWrapper">
+<caption class="winnersCaption"><span class="stars">&#9733; &#9733; &#9733;&nbsp;&nbsp;</span>Masterpoint Winners&nbsp;&nbsp;<span class="stars">&#9733; &#9733; &#9733;</span></caption>
+<tr>
+<td>
+<table class="winners winners2col">
+  <thead><tr> <td>Partnership</td> <td class="center">Pct</td> <td class="right">Rank</td> <td class="center">MP</td> </tr></thead>
+  <tbody>
+  <tr> <td>Andrew Loh - William Grant</td> <td class="right">63.97</td> <td class="right">1st OA</td> <td>2.50</td> </tr>
+  <tr> <td>Judy Rimer - Timothy Flaherty</td> <td class="right">57.91</td> <td class="right">2nd OA</td> <td>1.88</td> </tr>
+  <tr> <td>Bette Strauch - John Strauch</td> <td class="right">56.23</td> <td class="right">3rd OA</td> <td>1.41</td> </tr>
+  <tr> <td>Lynne O'Neill - Pat Chapman</td> <td class="right">54.71</td> <td class="right">4th OA</td> <td>1.05</td> </tr>
+  <tr> <td>Elaine Chan - Michael Mezin</td> <td class="right">54.55</td> <td class="right">2nd SA</td> <td>1.13</td> </tr>
+  <tr> <td>Roger Doughman - Suzanne LeBendig</td> <td class="right">54.04</td> <td class="right">3rd SA</td> <td>0.84</td> </tr>
+  </tbody>
+</table>
+</td>
+<td>
+<table class="winners winners2col">
+  <thead><tr> <td>Partnership</td> <td class="center">Pct</td> <td class="right">Rank</td> <td class="center">MP</td> </tr></thead>
+  <tbody>
+  <tr> <td>David Oakley - Sam Madison</td> <td class="right">53.54</td> <td class="right">4th SA</td> <td>0.67</td> </tr>
+  <tr> <td>David Abelow - Phyllis Yates</td> <td class="right">53.37</td> <td class="right">4th SA</td> <td>0.67</td> </tr>
+  <tr> <td>Anant Rathi - Mac Busby</td> <td class="right">52.69</td> <td class="right">5th SA</td> <td>0.60</td> </tr>
+  <tr> <td>Chris Hastie - Marty Roth</td> <td class="right">52.69</td> <td class="right">5th SA</td> <td>0.60</td> </tr>
+  <tr> <td>Alice Lane - Dorinda Lindvall</td> <td class="right">52.53</td> <td class="right">3rd SB</td> <td>0.32</td> </tr>
+  <tr> <td>John Howard - Victoria Haines</td> <td class="right">49.66</td> <td class="right">1st SC</td> <td>0.24</td> </tr>
+  </tbody>
+</table>
+</td>
+</tr></table>
+
+<pre>
+EVENT&gt;Mac/Cam Barometer Pairs  |SESSION&gt;Open Strat   |SECTION&gt; A N-S
+------------------------,------ ------------,-------- --------------------------
+DATE&gt;August 29, 2015    |CLUB NO.&gt;123703    | 08/29/2015 15:28
+---------------------,-- ------------------- -------------,---------------------
+DIR&gt; Jean Molnar     |RATING&gt;Club Masterpoint (100%, 80%, 80% Open)|MOVEMENT&gt;MITCHELL
+------------,-------- ,-------------------------,--------- ---------------------
+AVE&gt;  148.5 |TOP&gt;  11 |MP LIMITS&gt;None/4200/2000 |CLUB&gt;Adventures In Bridge
+------------ --------- ------------------------- -------------------------------
+PAIRS IN STRAT A=12/B=8/C=3                      ,---,-----------------,-------------------------,------,---------,
+-------------------------------------------------|   |      Overall    |           Section       |      |Final    |
+No Name                   Name                   |Flt|Rnk-A|Rnk-B|Rnk-C|Rnk-A|Rnk-B|Rnk-C| Score | Pct  |Awards   |
+------------------------------------------------- --- ----- ----- ----- ----- ----- ----- ------- ------ --------- 
+ <a href="javascript:recap('A1N')">1</a> Robert Shapley         Alana Shapley            B   .     .     .   |   .     .     .    126.50  42.59          
+ <a href="javascript:recap('A2N')">2</a> Karen Reed             Susan Cavolo             C   .     .     .   |   .     .     .    100.00  33.67          
+ <a href="javascript:recap('A3N')">3</a> David Abelow           Phyllis Yates            A   .     .     .   |   4     .     .    158.50  53.37  0.67(SA)
+ <a href="javascript:recap('A4N')">4</a> Marty Roth             Chris Hastie             C   .    3/4    1   |   5     2     1    156.50  52.69  0.60(SA)
+ <a href="javascript:recap('A5N')">5</a> Lynne O'Neill          Pat Chapman              B   4     1     .   |   3     1     .    162.50  54.71  1.05(OA)
+ <a href="javascript:recap('A6N')">6</a> Ursula Kantor          Robert Mann              C   .     .     .   |   .     .     .    141.00  47.47          
+ <a href="javascript:recap('A7N')">7</a> Mary Green             Roy Green                A   .     .     .   |   .     .     .    155.00  52.19          
+ <a href="javascript:recap('A8N')">8</a> Alice Lane             Dorinda Lindvall         B   .     5     .   |   .     3     .    156.00  52.53  0.32(SB)
+ <a href="javascript:recap('A9N')">9</a> William Grant          Andrew Loh               A   1     .     .   |   1     .     .    190.00  63.97  2.50(OA)
+<a href="javascript:recap('A10N')">10</a> Bunny Schmidt          Pete Watt                B   .     .     .   |   .     .     .    129.00  43.43          
+<a href="javascript:recap('A11N')">11</a> Robert Rosenblum       Christine Denny          B   .     .     .   |   .     .     .    140.00  47.14          
+<a href="javascript:recap('A12N')">12</a> Bette Strauch          John Strauch             A   3     .     .   |   2     .     .    167.00  56.23  1.41(OA)
+                                          Totals                                           1782.00       
+
+EVENT&gt;Mac/Cam Barometer Pairs  |SESSION&gt;Open Strat   |SECTION&gt; A E-W
+------------------------,------ ------------,-------- --------------------------
+AVE&gt;  148.5 |TOP&gt;  11 |MP LIMITS&gt;None/4200/2000 |CLUB&gt;Adventures In Bridge
+------------ --------- ------------------------- -------------------------------
+PAIRS IN STRAT A=12/B=6/C=3                      ,---,-----------------,-------------------------,------,---------,
+-------------------------------------------------|   |      Overall    |           Section       |      |Final    |
+No Name                   Name                   |Flt|Rnk-A|Rnk-B|Rnk-C|Rnk-A|Rnk-B|Rnk-C| Score | Pct  |Awards   |
+------------------------------------------------- --- ----- ----- ----- ----- ----- ----- ------- ------ --------- 
+ <a href="javascript:recap('A1E')">1</a> Kathee Bessinger       Freda Anderson           B   .     .     .   |   .     .     .    155.00  52.19          
+ <a href="javascript:recap('A2E')">2</a> Jo Boyer               Davis Bennett            C   .     .     .   |   .     .     .    110.00  37.04          
+ <a href="javascript:recap('A3E')">3</a> Maritha Pottenger      Budak Barkan             A   .     .     .   |   .     .     .    145.50  48.99          
+ <a href="javascript:recap('A4E')">4</a> Larry Sherman          Thomas Herzog            C   .     .     .   |   .     .     .    135.00  45.45          
+ <a href="javascript:recap('A5E')">5</a> Michael Mezin          Elaine Chan              B   5     2     .   |   2     1     .    162.00  54.55  1.13(SA)
+ <a href="javascript:recap('A6E')">6</a> Victoria Haines        John Howard              C   .     .     2   |   .     .     1    147.50  49.66  0.24(SC)
+ <a href="javascript:recap('A7E')">7</a> Timothy Flaherty       Judy Rimer               A   2     .     .   |   1     .     .    172.00  57.91  1.88(OA)
+ <a href="javascript:recap('A8E')">8</a> Mac Busby              Anant Rathi              B   .    3/4    .   |   5     2     .    156.50  52.69  0.60(SA)
+ <a href="javascript:recap('A9E')">9</a> Jon Wright             Ivar Stakgold            A   .     .     .   |   .     .     .    156.00  52.53          
+<a href="javascript:recap('A10E')">10</a> Roger Doughman         Suzanne LeBendig         A   6     .     .   |   3     .     .    160.50  54.04  0.84(SA)
+<a href="javascript:recap('A11E')">11</a> Sam Madison            David Oakley             A   .     .     .   |   4     .     .    159.00  53.54  0.67(SA)
+<a href="javascript:recap('A12E')">12</a> Liliane Kirchhoff      Rick Roeder              A   .     .     .   |   .     .     .    123.00  41.41          
+                                          Totals                                           1782.00       
+
+</pre>
+<table id="main_table">
+<caption style="display: none">Hands and Results</caption>
+<tr>
+<td class="board_analysis" id="board_results1">
+  <table class="board" id="board1">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">1</td>
+      <td class="north">
+      &spades;AQ986<br>
+      <span class="hs">&hearts;</span>K7<br>
+      <span class="ds">&diams;</span>T5<br>
+      &clubs;7532<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: North</span><br><span class="nowrap">Vul: None</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;J75<br>
+      <span class="hs">&hearts;</span>Q4<br>
+      <span class="ds">&diams;</span>K7632<br>
+      &clubs;A96<br>
+      </td>
+      <td class="east">
+      &spades;K2<br>
+      <span class="hs">&hearts;</span>8653<br>
+      <span class="ds">&diams;</span>AQ84<br>
+      &clubs;JT8<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;T43<br>
+      <span class="hs">&hearts;</span>AJT92<br>
+      <span class="ds">&diams;</span>J9<br>
+      &clubs;KQ4<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>9</td><td></td></tr>
+         <tr><td>10</td><td></td><td>10</td></tr>
+         <tr><td></td><td>11</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1&clubs;&nbsp;2<span class="hs">&hearts;</span>&nbsp;2&spades;&nbsp;<span class="ddfail"> &diams;4 NT6</span></td></tr>
+        <tr><td>EW:&nbsp;3<span class="hs">&diams;</span>&nbsp;<span class="ddfail"> &clubs;5 &hearts;4 &spades;4 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 17 - 17 = 0<br>Par: -100 3&spades;*-NS/3<span class="hs">&hearts;</span>*-NS-1</td>
+    <td><input type="button" value="C" onclick="javascript:c1('1','J75.Q4.K7632.A96','AQ986.K7.T5.7532','K2.8653.AQ84.JT8','T43.AJT92.J9.KQ4')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results1">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  170         11.00   0.00  2&spades; N +2   &clubs;J  12-Strauch-Strauch vs 12-Kirchhoff-Roeder
+  140         10.00   1.00  1&spades; N +2   <span class="hs">&hearts;</span>6  6-Kantor-Mann vs 6-Haines-Howard
+  110          9.00   2.00  2&spades; N      &clubs;8  9-Grant-Loh vs 9-Wright-Stakgold
+   50          8.00   3.00  3<span class="ds">&diams;</span> W -1   <span class="hs">&hearts;</span>K  4-Roth-Hastie vs 4-Sherman-Herzog
+        100    6.00   5.00  3<span class="hs">&hearts;</span> S -2   <span class="ds">&diams;</span>3  2-Reed-Cavolo vs 2-Boyer-Bennett
+        100    6.00   5.00  3<span class="hs">&hearts;</span> S -2       3-Abelow-Yates vs 3-Pottenger-Barkan
+        100    6.00   5.00  2<span class="hs">&hearts;</span> S -2   <span class="ds">&diams;</span>2  10-Schmidt-Watt vs 10-Doughman-LeBendig
+        110    2.50   8.50  3<span class="ds">&diams;</span> W      <span class="hs">&hearts;</span>K  8-Lane-Lindvall vs 8-Busby-Rathi
+        110    2.50   8.50  3<span class="ds">&diams;</span> W          11-Rosenblum-Denny vs 11-Madison-Oakley
+        110    2.50   8.50  2<span class="ds">&diams;</span> W +1   <span class="hs">&hearts;</span>K  5-O'Neill-Chapman vs 5-Mezin-Chan
+        110    2.50   8.50  2<span class="ds">&diams;</span> E +1       7-Green-Green vs 7-Flaherty-Rimer
+        200    0.00  11.00  2N N -4   <span class="opplead"><span class="ds">&diams;</span>3</span>  1-Shapley-Shapley vs 1-Bessinger-Anderson
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results2">
+  <table class="board" id="board2">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">2</td>
+      <td class="north">
+      &spades;K<br>
+      <span class="hs">&hearts;</span>KJ98764<br>
+      <span class="ds">&diams;</span>A8752<br>
+      &clubs;-<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: East</span><br><span class="nowrap">Vul: N-S</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;AJ<br>
+      <span class="hs">&hearts;</span>Q5<br>
+      <span class="ds">&diams;</span>KQT9<br>
+      &clubs;AJT98<br>
+      </td>
+      <td class="east">
+      &spades;T72<br>
+      <span class="hs">&hearts;</span>A32<br>
+      <span class="ds">&diams;</span>J43<br>
+      &clubs;K762<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;Q986543<br>
+      <span class="hs">&hearts;</span>T<br>
+      <span class="ds">&diams;</span>6<br>
+      &clubs;Q543<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>11</td><td></td></tr>
+         <tr><td>17</td><td></td><td>8</td></tr>
+         <tr><td></td><td>4</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;2<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &clubs;2/3 &diams;3 &spades;6 NT2</span></td></tr>
+        <tr><td>EW:&nbsp;4&clubs;&nbsp;2/3<span class="hs">&diams;</span>&nbsp;1/5NT&nbsp;<span class="ddfail"> &hearts;5 &spades;6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 18 - 17 = +1<br>Par: -460 5NT-W</td>
+    <td><input type="button" value="C" onclick="javascript:c1('2','AJ.Q5.KQT9.AJT98','K.KJ98764.A8752.','T72.A32.J43.K762','Q986543.T.6.Q543')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results2">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  670         11.00   0.00  2<span class="hs">&hearts;</span>* N     &clubs;2  10-Schmidt-Watt vs 10-Doughman-LeBendig
+  200         10.00   1.00  3N E -4   <span class="hs">&hearts;</span>T  2-Reed-Cavolo vs 2-Boyer-Bennett
+        100    9.00   2.00  3<span class="hs">&hearts;</span> N -1       3-Abelow-Yates vs 3-Pottenger-Barkan
+        200    7.00   4.00  2&spades;* S -1  <span class="ds">&diams;</span>K  12-Strauch-Strauch vs 12-Kirchhoff-Roeder
+        200    7.00   4.00  4<span class="hs">&hearts;</span> N -2   <span class="opplead">&clubs;8</span>  9-Grant-Loh vs 9-Wright-Stakgold
+        200    7.00   4.00  4<span class="hs">&hearts;</span> N -2   &clubs;2  8-Lane-Lindvall vs 8-Busby-Rathi
+        300    5.00   6.00  4<span class="hs">&hearts;</span> N -3       7-Green-Green vs 7-Flaherty-Rimer
+        500    3.00   8.00  4<span class="hs">&hearts;</span>* S -2  <span class="opplead">&clubs;2</span>  5-O'Neill-Chapman vs 5-Mezin-Chan
+        500    3.00   8.00  4<span class="hs">&hearts;</span>* N -2  &clubs;2  6-Kantor-Mann vs 6-Haines-Howard
+        500    3.00   8.00  3<span class="ds">&diams;</span>* N -2  <span class="ds">&diams;</span>3  1-Shapley-Shapley vs 1-Bessinger-Anderson
+        800    0.50  10.50  4<span class="hs">&hearts;</span>* N -3  <span class="badlead">&clubs;4</span>  4-Roth-Hastie vs 4-Sherman-Herzog
+        800    0.50  10.50  4<span class="hs">&hearts;</span>* N -3      11-Rosenblum-Denny vs 11-Madison-Oakley
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results3">
+  <table class="board" id="board3">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">3</td>
+      <td class="north">
+      &spades;AT8<br>
+      <span class="hs">&hearts;</span>QJT7654<br>
+      <span class="ds">&diams;</span>T2<br>
+      &clubs;T<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: South</span><br><span class="nowrap">Vul: E-W</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;965<br>
+      <span class="hs">&hearts;</span>8<br>
+      <span class="ds">&diams;</span>AK943<br>
+      &clubs;A864<br>
+      </td>
+      <td class="east">
+      &spades;KJ42<br>
+      <span class="hs">&hearts;</span>AK<br>
+      <span class="ds">&diams;</span>85<br>
+      &clubs;K7532<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;Q73<br>
+      <span class="hs">&hearts;</span>932<br>
+      <span class="ds">&diams;</span>QJ76<br>
+      &clubs;QJ9<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>7</td><td></td></tr>
+         <tr><td>11</td><td></td><td>14</td></tr>
+         <tr><td></td><td>8</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &clubs;2 &diams;4 &spades;3 NT4</span></td></tr>
+        <tr><td>EW:&nbsp;5&clubs;&nbsp;3<span class="hs">&diams;</span>&nbsp;3/4&spades;&nbsp;2NT&nbsp;<span class="ddfail"> &hearts;6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 18 - 19 = -1<br>Par: -620 4&spades;-W</td>
+    <td><input type="button" value="C" onclick="javascript:c1('3','965.8.AK943.A864','AT8.QJT7654.T2.html','KJ42.AK.85.K7532','Q73.932.QJ76.QJ9')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results3">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  200         11.00   0.00  3N E -2   <span class="hs">&hearts;</span>2  4-Roth-Hastie vs 4-Sherman-Herzog
+  100          7.00   4.00  3N E -1   <span class="hs">&hearts;</span>9  6-Kantor-Mann vs 6-Haines-Howard
+  100          7.00   4.00  3N E -1   <span class="hs">&hearts;</span>9  11-Rosenblum-Denny vs 11-Madison-Oakley
+  100          7.00   4.00  3N E -1   <span class="badlead"><span class="hs">&hearts;</span>8</span>  9-Grant-Loh vs 9-Wright-Stakgold
+  100          7.00   4.00  3N E -1       3-Abelow-Yates vs 3-Pottenger-Barkan
+  100          7.00   4.00  6&clubs; W -1   &spades;A  1-Shapley-Shapley vs 1-Bessinger-Anderson
+  100          7.00   4.00  6&clubs; W -1   &spades;A  8-Lane-Lindvall vs 8-Busby-Rathi
+  100          7.00   4.00  5&clubs; W -1   <span class="hs">&hearts;</span>Q  10-Schmidt-Watt vs 10-Doughman-LeBendig
+        300    2.00   9.00  4<span class="hs">&hearts;</span>* N -2  <span class="ds">&diams;</span>5  5-O'Neill-Chapman vs 5-Mezin-Chan
+        300    2.00   9.00  4<span class="hs">&hearts;</span>* N -2  &clubs;2  2-Reed-Cavolo vs 2-Boyer-Bennett
+        300    2.00   9.00  3<span class="hs">&hearts;</span>* N -2  <span class="badlead"><span class="ds">&diams;</span>T</span>  7-Green-Green vs 7-Flaherty-Rimer
+        620    0.00  11.00  4&spades; W      &clubs;T  12-Strauch-Strauch vs 12-Kirchhoff-Roeder
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results4">
+  <table class="board" id="board4">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">4</td>
+      <td class="north">
+      &spades;J543<br>
+      <span class="hs">&hearts;</span>32<br>
+      <span class="ds">&diams;</span>AKJ7<br>
+      &clubs;AJ3<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: West</span><br><span class="nowrap">Vul: Both</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;QT72<br>
+      <span class="hs">&hearts;</span>AKQ6<br>
+      <span class="ds">&diams;</span>QT54<br>
+      &clubs;4<br>
+      </td>
+      <td class="east">
+      &spades;AK98<br>
+      <span class="hs">&hearts;</span>JT4<br>
+      <span class="ds">&diams;</span>93<br>
+      &clubs;K762<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;6<br>
+      <span class="hs">&hearts;</span>9875<br>
+      <span class="ds">&diams;</span>862<br>
+      &clubs;QT985<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>14</td><td></td></tr>
+         <tr><td>13</td><td></td><td>11</td></tr>
+         <tr><td></td><td>2</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1&clubs;&nbsp;<span class="ddfail"> &diams;6 &hearts;4 &spades;3 NT4</span></td></tr>
+        <tr><td>EW:&nbsp;3<span class="hs">&hearts;</span>&nbsp;4&spades;&nbsp;3NT&nbsp;<span class="ddfail"> &clubs;6 &diams;6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 17 - 16 = +1<br>Par: -620 4&spades;-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('4','QT72.AKQ6.QT54.4','J543.32.AKJ7.AJ3','AK98.JT4.93.K762','6.9875.862.QT985')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results4">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  180         11.00   0.00  2&clubs;* N     <span class="badlead">&clubs;8</span>  9-Grant-Loh vs 8-Busby-Rathi
+  100          8.50   2.50  4&spades; E -1   &clubs;T  5-O'Neill-Chapman vs 4-Sherman-Herzog
+  100          8.50   2.50  4&spades; E -1   &clubs;T  11-Rosenblum-Denny vs 10-Doughman-LeBendig
+  100          8.50   2.50  4&spades; E -1   &clubs;9  8-Lane-Lindvall vs 7-Flaherty-Rimer
+  100          8.50   2.50  4&spades; E -1   &clubs;9  12-Strauch-Strauch vs 11-Madison-Oakley
+        100    6.00   5.00  1N N -1       3-Abelow-Yates vs 2-Boyer-Bennett
+        110    5.00   6.00  2<span class="hs">&hearts;</span> W      <span class="ds">&diams;</span>K  1-Shapley-Shapley vs 12-Kirchhoff-Roeder
+        140    4.00   7.00  2&spades; E +1   <span class="ds">&diams;</span>8  2-Reed-Cavolo vs 1-Bessinger-Anderson
+        170    3.00   8.00  2&spades; E +2   &clubs;8  4-Roth-Hastie vs 3-Pottenger-Barkan
+        620    1.50   9.50  4&spades; E      <span class="hs">&hearts;</span>9  6-Kantor-Mann vs 5-Mezin-Chan
+        620    1.50   9.50  4&spades; E      <span class="hs">&hearts;</span>9  7-Green-Green vs 6-Haines-Howard
+        790    0.00  11.00  4&spades;* W     <span class="opplead"><span class="hs">&hearts;</span>9</span>  10-Schmidt-Watt vs 9-Wright-Stakgold
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results5">
+  <table class="board" id="board5">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">5</td>
+      <td class="north">
+      &spades;AJ95<br>
+      <span class="hs">&hearts;</span>T6<br>
+      <span class="ds">&diams;</span>AJ86<br>
+      &clubs;AQ3<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: North</span><br><span class="nowrap">Vul: N-S</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;K874<br>
+      <span class="hs">&hearts;</span>K42<br>
+      <span class="ds">&diams;</span>T52<br>
+      &clubs;K62<br>
+      </td>
+      <td class="east">
+      &spades;QT2<br>
+      <span class="hs">&hearts;</span>AJ53<br>
+      <span class="ds">&diams;</span>KQ<br>
+      &clubs;J987<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;63<br>
+      <span class="hs">&hearts;</span>Q987<br>
+      <span class="ds">&diams;</span>9743<br>
+      &clubs;T54<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>16</td><td></td></tr>
+         <tr><td>9</td><td></td><td>13</td></tr>
+         <tr><td></td><td>2</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;2<span class="hs">&diams;</span>&nbsp;<span class="ddfail"> &clubs;6 &hearts;6 &spades;6 NT6</span></td></tr>
+        <tr><td>EW:&nbsp;1&clubs;&nbsp;1&spades;&nbsp;<span class="ddfail"> &diams;5 &hearts;6 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 15 - 15 = 0<br>Par: +90 2<span class="ds">&diams;</span>-NS</td>
+    <td><input type="button" value="C" onclick="javascript:c1('5','K874.K42.T52.K62','AJ95.T6.AJ86.AQ3','QT2.AJ53.KQ.J987','63.Q987.9743.T54')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results5">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  120         10.50   0.50  1N N +1   <span class="hs">&hearts;</span>3  10-Schmidt-Watt vs 9-Wright-Stakgold
+  120         10.50   0.50  1N N +1       3-Abelow-Yates vs 2-Boyer-Bennett
+   90          6.50   4.50  1N N      <span class="badlead"><span class="hs">&hearts;</span>7</span>  4-Roth-Hastie vs 3-Pottenger-Barkan
+   90          6.50   4.50  1N N      <span class="hs">&hearts;</span>5  7-Green-Green vs 6-Haines-Howard
+   90          6.50   4.50  1N N      &clubs;9  11-Rosenblum-Denny vs 10-Doughman-LeBendig
+   90          6.50   4.50  1N N      &clubs;8  9-Grant-Loh vs 8-Busby-Rathi
+   90          6.50   4.50  1N N      <span class="badlead">&clubs;4</span>  5-O'Neill-Chapman vs 4-Sherman-Herzog
+   90          6.50   4.50  1N N          8-Lane-Lindvall vs 7-Flaherty-Rimer
+   50          3.00   8.00  2&spades; W -1   <span class="hs">&hearts;</span>T  12-Strauch-Strauch vs 11-Madison-Oakley
+        100    2.00   9.00  1N N -1   <span class="badlead">&clubs;3</span>  1-Shapley-Shapley vs 12-Kirchhoff-Roeder
+        110    1.00  10.00  2&spades; W      <span class="opplead"><span class="hs">&hearts;</span>9</span>  6-Kantor-Mann vs 5-Mezin-Chan
+        200    0.00  11.00  3N* N -1  &spades;2  2-Reed-Cavolo vs 1-Bessinger-Anderson
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results6">
+  <table class="board" id="board6">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">6</td>
+      <td class="north">
+      &spades;QT65<br>
+      <span class="hs">&hearts;</span>AT954<br>
+      <span class="ds">&diams;</span>T5<br>
+      &clubs;A9<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: East</span><br><span class="nowrap">Vul: E-W</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;KJ<br>
+      <span class="hs">&hearts;</span>KJ3<br>
+      <span class="ds">&diams;</span>KJ98432<br>
+      &clubs;2<br>
+      </td>
+      <td class="east">
+      &spades;A32<br>
+      <span class="hs">&hearts;</span>Q82<br>
+      <span class="ds">&diams;</span>A<br>
+      &clubs;QT7643<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;9874<br>
+      <span class="hs">&hearts;</span>76<br>
+      <span class="ds">&diams;</span>Q76<br>
+      &clubs;KJ85<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>10</td><td></td></tr>
+         <tr><td>12</td><td></td><td>12</td></tr>
+         <tr><td></td><td>6</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1&spades;&nbsp;<span class="ddfail"> &clubs;5 &diams;3 &hearts;5 NT5</span></td></tr>
+        <tr><td>EW:&nbsp;2&clubs;&nbsp;4<span class="hs">&diams;</span>&nbsp;1<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &spades;5/6 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 17 - 16 = +1<br>Par: -130 4<span class="ds">&diams;</span>-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('6','KJ.KJ3.KJ98432.2','QT65.AT954.T5.A9','A32.Q82.A.QT7643','9874.76.Q76.KJ85')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results6">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  400         11.00   0.00  3N W -4   <span class="badlead"><span class="hs">&hearts;</span>3</span>  1-Shapley-Shapley vs 12-Kirchhoff-Roeder
+  300          9.50   1.50  3N W -3   <span class="hs">&hearts;</span>9  8-Lane-Lindvall vs 7-Flaherty-Rimer
+  300          9.50   1.50  3N W -3       2-Reed-Cavolo vs 1-Bessinger-Anderson
+  200          8.00   3.00  3N E -2   &spades;9  12-Strauch-Strauch vs 11-Madison-Oakley
+  100          7.00   4.00  3N W -1   <span class="hs">&hearts;</span>5  7-Green-Green vs 6-Haines-Howard
+        130    6.00   5.00  3<span class="ds">&diams;</span> W +1   &clubs;A  4-Roth-Hastie vs 3-Pottenger-Barkan
+        150    3.50   7.50  3<span class="ds">&diams;</span> W +2   <span class="opplead">&spades;8</span>  9-Grant-Loh vs 8-Busby-Rathi
+        150    3.50   7.50  3<span class="ds">&diams;</span> W +2   &spades;5  5-O'Neill-Chapman vs 4-Sherman-Herzog
+        150    3.50   7.50  2<span class="ds">&diams;</span> W +3       3-Abelow-Yates vs 2-Boyer-Bennett
+        150    3.50   7.50  2&clubs; W +3   &spades;5  11-Rosenblum-Denny vs 10-Doughman-LeBendig
+        180    1.00  10.00  2N W +2   &spades;5  6-Kantor-Mann vs 5-Mezin-Chan
+        660    0.00  11.00  3N W +2   &spades;5  10-Schmidt-Watt vs 9-Wright-Stakgold
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results7">
+  <table class="board" id="board7">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">7</td>
+      <td class="north">
+      &spades;JT97643<br>
+      <span class="hs">&hearts;</span>-<br>
+      <span class="ds">&diams;</span>85<br>
+      &clubs;AKQ3<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: South</span><br><span class="nowrap">Vul: Both</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;Q2<br>
+      <span class="hs">&hearts;</span>J9<br>
+      <span class="ds">&diams;</span>AJT64<br>
+      &clubs;J874<br>
+      </td>
+      <td class="east">
+      &spades;8<br>
+      <span class="hs">&hearts;</span>QT86543<br>
+      <span class="ds">&diams;</span>Q732<br>
+      &clubs;5<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;AK5<br>
+      <span class="hs">&hearts;</span>AK72<br>
+      <span class="ds">&diams;</span>K9<br>
+      &clubs;T962<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>10</td><td></td></tr>
+         <tr><td>9</td><td></td><td>4</td></tr>
+         <tr><td></td><td>17</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;5/6&clubs;&nbsp;5/6&spades;&nbsp;2/6NT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ddfail"> &diams;4/5 &hearts;4</span></td></tr>
+        <tr><td>EW:&nbsp;1<span class="hs">&diams;</span>&nbsp;3<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &clubs;0 &spades;0 NT0</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 21 - 19 = +2<br>Par: +1100 7<span class="hs">&hearts;</span>*-EW-4</td>
+    <td><input type="button" value="C" onclick="javascript:c1('7','Q2.J9.AJT64.J874','JT97643..85.AKQ3','8.QT86543.Q732.5','AK5.AK72.K9.T962')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results7">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+ 1460         10.50   0.50  6&spades; S +1   &clubs;4  5-O'Neill-Chapman vs 3-Pottenger-Barkan
+ 1460         10.50   0.50  6&spades; N +1   <span class="badlead">&clubs;2</span>  10-Schmidt-Watt vs 8-Busby-Rathi
+ 1430          8.50   2.50  6&spades; S      <span class="ds">&diams;</span>A  9-Grant-Loh vs 7-Flaherty-Rimer
+ 1430          8.50   2.50  6&spades; N          2-Reed-Cavolo vs 12-Kirchhoff-Roeder
+  710          5.50   5.50  4&spades; S +3       7-Green-Green vs 5-Mezin-Chan
+  710          5.50   5.50  4&spades; N +3   &clubs;5  12-Strauch-Strauch vs 10-Doughman-LeBendig
+  710          5.50   5.50  4&spades; N +3   <span class="badlead">&clubs;3</span>  1-Shapley-Shapley vs 11-Madison-Oakley
+  710          5.50   5.50  4&spades; N +3       3-Abelow-Yates vs 1-Bessinger-Anderson
+  680          2.00   9.00  4&spades; S +2   <span class="hs">&hearts;</span>J  4-Roth-Hastie vs 2-Boyer-Bennett
+  680          2.00   9.00  4&spades; S +2   <span class="hs">&hearts;</span>J  8-Lane-Lindvall vs 6-Haines-Howard
+  680          2.00   9.00  4&spades; S +2       11-Rosenblum-Denny vs 9-Wright-Stakgold
+  650          0.00  11.00  4&spades; S +1   <span class="hs">&hearts;</span>J  6-Kantor-Mann vs 4-Sherman-Herzog
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results8">
+  <table class="board" id="board8">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">8</td>
+      <td class="north">
+      &spades;K6<br>
+      <span class="hs">&hearts;</span>T862<br>
+      <span class="ds">&diams;</span>T75<br>
+      &clubs;AKT7<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: West</span><br><span class="nowrap">Vul: None</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;QT8732<br>
+      <span class="hs">&hearts;</span>3<br>
+      <span class="ds">&diams;</span>K96<br>
+      &clubs;952<br>
+      </td>
+      <td class="east">
+      &spades;A9<br>
+      <span class="hs">&hearts;</span>AKJ95<br>
+      <span class="ds">&diams;</span>Q84<br>
+      &clubs;QJ6<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;J54<br>
+      <span class="hs">&hearts;</span>Q74<br>
+      <span class="ds">&diams;</span>AJ32<br>
+      &clubs;843<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>10</td><td></td></tr>
+         <tr><td>5</td><td></td><td>17</td></tr>
+         <tr><td></td><td>8</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;<span class="ddfail"> &clubs;5 &diams;5 &hearts;5 &spades;4 NT5</span></td></tr>
+        <tr><td>EW:&nbsp;1&clubs;&nbsp;1<span class="hs">&diams;</span>&nbsp;2<span class="hs">&hearts;</span>&nbsp;3&spades;&nbsp;2NT</td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 14 - 15 = -1<br>Par: -140 3&spades;-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('8','QT8732.3.K96.952','K6.T862.T75.AKT7','A9.AKJ95.Q84.QJ6','J54.Q74.AJ32.843')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results8">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  100         11.00   0.00  4&spades; W -2   &clubs;A  11-Rosenblum-Denny vs 9-Wright-Stakgold
+   50          8.50   2.50  4&spades; W -1   &clubs;A  5-O'Neill-Chapman vs 3-Pottenger-Barkan
+   50          8.50   2.50  4&spades; W -1   &clubs;A  6-Kantor-Mann vs 4-Sherman-Herzog
+   50          8.50   2.50  4&spades; W -1   &clubs;A  9-Grant-Loh vs 7-Flaherty-Rimer
+   50          8.50   2.50  4&spades; W -1       8-Lane-Lindvall vs 6-Haines-Howard
+        110    6.00   5.00  2&spades; E      &clubs;3  12-Strauch-Strauch vs 10-Doughman-LeBendig
+        140    3.50   7.50  3&spades; W      &clubs;A  10-Schmidt-Watt vs 8-Busby-Rathi
+        140    3.50   7.50  3&spades; E          2-Reed-Cavolo vs 12-Kirchhoff-Roeder
+        140    3.50   7.50  2&spades; W +1   &clubs;A  3-Abelow-Yates vs 1-Bessinger-Anderson
+        140    3.50   7.50  2&spades; W +1   <span class="opplead">&clubs;8</span>  7-Green-Green vs 5-Mezin-Chan
+        170    1.00  10.00  2&spades; E +2   &spades;4  4-Roth-Hastie vs 2-Boyer-Bennett
+        420    0.00  11.00  4&spades; E      <span class="badlead"><span class="hs">&hearts;</span>3</span>  1-Shapley-Shapley vs 11-Madison-Oakley
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results9">
+  <table class="board" id="board9">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">9</td>
+      <td class="north">
+      &spades;QJ865<br>
+      <span class="hs">&hearts;</span>K7<br>
+      <span class="ds">&diams;</span>K94<br>
+      &clubs;AQ4<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: North</span><br><span class="nowrap">Vul: E-W</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;42<br>
+      <span class="hs">&hearts;</span>AQ84<br>
+      <span class="ds">&diams;</span>A8<br>
+      &clubs;87632<br>
+      </td>
+      <td class="east">
+      &spades;AK73<br>
+      <span class="hs">&hearts;</span>532<br>
+      <span class="ds">&diams;</span>QT753<br>
+      &clubs;T<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;T9<br>
+      <span class="hs">&hearts;</span>JT96<br>
+      <span class="ds">&diams;</span>J62<br>
+      &clubs;KJ95<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>15</td><td></td></tr>
+         <tr><td>10</td><td></td><td>9</td></tr>
+         <tr><td></td><td>6</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1&clubs;&nbsp;<span class="ddfail"> &diams;5 &hearts;5 &spades;6 NT6</span></td></tr>
+        <tr><td>EW:&nbsp;2<span class="hs">&diams;</span>&nbsp;1/2<span class="hs">&hearts;</span>&nbsp;-/1&spades;&nbsp;1NT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ddfail"> &clubs;6 &spades;6/7</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 15 - 14 = +1<br>Par: -110 2<span class="hs">&hearts;</span>-W</td>
+    <td><input type="button" value="C" onclick="javascript:c1('9','42.AQ84.A8.87632','QJ865.K7.K94.AQ4','AK73.532.QT753.html','T9.JT96.J62.KJ95')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results9">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  200         11.00   0.00  3<span class="ds">&diams;</span> E -2   <span class="badlead"><span class="ds">&diams;</span>3</span>  7-Green-Green vs 5-Mezin-Chan
+  120          9.50   1.50  2N S      <span class="badlead"><span class="hs">&hearts;</span>9</span>  6-Kantor-Mann vs 4-Sherman-Herzog
+  120          9.50   1.50  2N S      &clubs;8  11-Rosenblum-Denny vs 9-Wright-Stakgold
+         50    5.50   5.50  2N N -1   <span class="opplead"><span class="ds">&diams;</span>8</span>  4-Roth-Hastie vs 2-Boyer-Bennett
+         50    5.50   5.50  1N N -1   <span class="opplead"><span class="ds">&diams;</span>8</span>  9-Grant-Loh vs 7-Flaherty-Rimer
+         50    5.50   5.50  1N N -1   <span class="ds">&diams;</span>5  5-O'Neill-Chapman vs 3-Pottenger-Barkan
+         50    5.50   5.50  1N N -1   <span class="ds">&diams;</span>3  1-Shapley-Shapley vs 11-Madison-Oakley
+         50    5.50   5.50  1N N -1       3-Abelow-Yates vs 1-Bessinger-Anderson
+         50    5.50   5.50  2&spades; N -1   &clubs;T  8-Lane-Lindvall vs 6-Haines-Howard
+        100    1.50   9.50  2N S -2   &clubs;7  12-Strauch-Strauch vs 10-Doughman-LeBendig
+        100    1.50   9.50  1N N -2   <span class="ds">&diams;</span>5  10-Schmidt-Watt vs 8-Busby-Rathi
+        170    0.00  11.00  3<span class="hs">&hearts;</span> W +1       2-Reed-Cavolo vs 12-Kirchhoff-Roeder
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results10">
+  <table class="board" id="board10">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">10</td>
+      <td class="north">
+      &spades;K5<br>
+      <span class="hs">&hearts;</span>AQ853<br>
+      <span class="ds">&diams;</span>9742<br>
+      &clubs;AT<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: East</span><br><span class="nowrap">Vul: Both</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;864<br>
+      <span class="hs">&hearts;</span>-<br>
+      <span class="ds">&diams;</span>AKQT<br>
+      &clubs;QJ9873<br>
+      </td>
+      <td class="east">
+      &spades;AQJT9<br>
+      <span class="hs">&hearts;</span>J9762<br>
+      <span class="ds">&diams;</span>85<br>
+      &clubs;5<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;732<br>
+      <span class="hs">&hearts;</span>KT4<br>
+      <span class="ds">&diams;</span>J63<br>
+      &clubs;K642<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>13</td><td></td></tr>
+         <tr><td>12</td><td></td><td>8</td></tr>
+         <tr><td></td><td>7</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;<span class="ddfail"> &clubs;2 &diams;4 &hearts;6 &spades;2 NT4</span></td></tr>
+        <tr><td>EW:&nbsp;4&clubs;&nbsp;1<span class="hs">&diams;</span>&nbsp;1<span class="hs">&hearts;</span>&nbsp;5&spades;&nbsp;1NT</td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 17 - 16 = +1<br>Par: -650 5&spades;-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('10','864..AKQT.QJ9873','K5.AQ853.9742.AT','AQJT9.J9762.85.5','732.KT4.J63.K642')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results10">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+        200   10.00   1.00  3&spades; E +2   <span class="hs">&hearts;</span>4  4-Roth-Hastie vs 1-Bessinger-Anderson
+        200   10.00   1.00  3&spades; E +2   <span class="hs">&hearts;</span>4  7-Green-Green vs 4-Sherman-Herzog
+        200   10.00   1.00  2&spades; E +3   <span class="hs">&hearts;</span>K  6-Kantor-Mann vs 3-Pottenger-Barkan
+        230    8.00   3.00  3&spades; E +3   <span class="hs">&hearts;</span>4  8-Lane-Lindvall vs 5-Mezin-Chan
+        300    7.00   4.00  3<span class="hs">&hearts;</span> N -3   &clubs;5  5-O'Neill-Chapman vs 2-Boyer-Bennett
+        620    6.00   5.00  4&spades; E          3-Abelow-Yates vs 12-Kirchhoff-Roeder
+        650    2.50   8.50  4&spades; E +1   <span class="badlead">&spades;4</span>  2-Reed-Cavolo vs 11-Madison-Oakley
+        650    2.50   8.50  4&spades; E +1   <span class="opplead"><span class="hs">&hearts;</span>8</span>  9-Grant-Loh vs 6-Haines-Howard
+        650    2.50   8.50  4&spades; E +1   <span class="hs">&hearts;</span>4  12-Strauch-Strauch vs 9-Wright-Stakgold
+        650    2.50   8.50  4&spades; E +1       1-Shapley-Shapley vs 10-Doughman-LeBendig
+        650    2.50   8.50  4&spades; E +1       10-Schmidt-Watt vs 7-Flaherty-Rimer
+        650    2.50   8.50  4&spades; E +1       11-Rosenblum-Denny vs 8-Busby-Rathi
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results11">
+  <table class="board" id="board11">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">11</td>
+      <td class="north">
+      &spades;A5<br>
+      <span class="hs">&hearts;</span>T9<br>
+      <span class="ds">&diams;</span>K9754<br>
+      &clubs;K832<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: South</span><br><span class="nowrap">Vul: None</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;Q2<br>
+      <span class="hs">&hearts;</span>AK7<br>
+      <span class="ds">&diams;</span>J863<br>
+      &clubs;Q764<br>
+      </td>
+      <td class="east">
+      &spades;KJ963<br>
+      <span class="hs">&hearts;</span>8543<br>
+      <span class="ds">&diams;</span>QT<br>
+      &clubs;T5<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;T874<br>
+      <span class="hs">&hearts;</span>QJ62<br>
+      <span class="ds">&diams;</span>A2<br>
+      &clubs;AJ9<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>10</td><td></td></tr>
+         <tr><td>12</td><td></td><td>6</td></tr>
+         <tr><td></td><td>12</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;3&clubs;&nbsp;3<span class="hs">&diams;</span>&nbsp;2<span class="hs">&hearts;</span>&nbsp;1&spades;&nbsp;2NT</td></tr>
+        <tr><td>EW:&nbsp;<span class="ddfail"> &clubs;4 &diams;4 &hearts;5 &spades;5 NT4</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 14 - 14 = 0<br>Par: +120 2NT-NS</td>
+    <td><input type="button" value="C" onclick="javascript:c1('11','Q2.AK7.J863.Q764','A5.T9.K9754.K832','KJ963.8543.QT.T5','T874.QJ62.A2.AJ9')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results11">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  470         11.00   0.00  3&clubs;* S     <span class="hs">&hearts;</span>A  5-O'Neill-Chapman vs 2-Boyer-Bennett
+  200         10.00   1.00  2N W -4   &clubs;2  4-Roth-Hastie vs 1-Bessinger-Anderson
+  150          9.00   2.00  1N S +2   &clubs;4  12-Strauch-Strauch vs 9-Wright-Stakgold
+  120          7.50   3.50  1N S +1   &clubs;4  8-Lane-Lindvall vs 5-Mezin-Chan
+  120          7.50   3.50  1N N +1       3-Abelow-Yates vs 12-Kirchhoff-Roeder
+  110          5.00   6.00  2<span class="ds">&diams;</span> S +1   <span class="hs">&hearts;</span>A  7-Green-Green vs 4-Sherman-Herzog
+  110          5.00   6.00  3&clubs; S      <span class="hs">&hearts;</span>A  1-Shapley-Shapley vs 10-Doughman-LeBendig
+  110          5.00   6.00  3&clubs; S      <span class="opplead"><span class="ds">&diams;</span>Q</span>  9-Grant-Loh vs 6-Haines-Howard
+   90          3.00   8.00  1N N      &spades;6  10-Schmidt-Watt vs 7-Flaherty-Rimer
+        100    1.50   9.50  2&spades; S -2   <span class="hs">&hearts;</span>K  2-Reed-Cavolo vs 11-Madison-Oakley
+        100    1.50   9.50  3&clubs; S -2       6-Kantor-Mann vs 3-Pottenger-Barkan
+        150    0.00  11.00  3&clubs; S -3   &spades;Q  11-Rosenblum-Denny vs 8-Busby-Rathi
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results12">
+  <table class="board" id="board12">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">12</td>
+      <td class="north">
+      &spades;KQ6<br>
+      <span class="hs">&hearts;</span>Q73<br>
+      <span class="ds">&diams;</span>K8642<br>
+      &clubs;87<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: West</span><br><span class="nowrap">Vul: N-S</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;T92<br>
+      <span class="hs">&hearts;</span>K94<br>
+      <span class="ds">&diams;</span>AT975<br>
+      &clubs;32<br>
+      </td>
+      <td class="east">
+      &spades;J84<br>
+      <span class="hs">&hearts;</span>JT6<br>
+      <span class="ds">&diams;</span>Q<br>
+      &clubs;AKJT54<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;A753<br>
+      <span class="hs">&hearts;</span>A852<br>
+      <span class="ds">&diams;</span>J3<br>
+      &clubs;Q96<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>10</td><td></td></tr>
+         <tr><td>7</td><td></td><td>12</td></tr>
+         <tr><td></td><td>11</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1<span class="hs">&diams;</span>&nbsp;1<span class="hs">&hearts;</span>&nbsp;2&spades;&nbsp;1NT&nbsp;<span class="ddfail"> &clubs;6</span></td></tr>
+        <tr><td>EW:&nbsp;1&clubs;&nbsp;<span class="ddfail"> &diams;6 &hearts;5 &spades;4 NT5</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 15 - 15 = 0<br>Par: +110 2&spades;-NS</td>
+    <td><input type="button" value="C" onclick="javascript:c1('12','T92.K94.AT975.32','KQ6.Q73.K8642.87','J84.JT6.Q.AKJT54','A753.A852.J3.Q96')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results12">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  200         10.50   0.50  3N W -4   <span class="ds">&diams;</span>4  12-Strauch-Strauch vs 9-Wright-Stakgold
+  200         10.50   0.50  2<span class="ds">&diams;</span> W -4   &spades;K  5-O'Neill-Chapman vs 2-Boyer-Bennett
+  100          8.50   2.50  3&clubs; E -2   <span class="ds">&diams;</span>J  1-Shapley-Shapley vs 10-Doughman-LeBendig
+  100          8.50   2.50  3&clubs; E -2   <span class="ds">&diams;</span>J  10-Schmidt-Watt vs 7-Flaherty-Rimer
+   50          6.00   5.00  1N W -1   &spades;K  3-Abelow-Yates vs 12-Kirchhoff-Roeder
+   50          6.00   5.00  3&clubs; E -1   <span class="ds">&diams;</span>J  11-Rosenblum-Denny vs 8-Busby-Rathi
+   50          6.00   5.00  2&clubs; E -1   <span class="hs">&hearts;</span>A  8-Lane-Lindvall vs 5-Mezin-Chan
+         90    3.50   7.50  2&clubs; E      <span class="ds">&diams;</span>J  4-Roth-Hastie vs 1-Bessinger-Anderson
+         90    3.50   7.50  2&clubs; E      <span class="ds">&diams;</span>J  6-Kantor-Mann vs 3-Pottenger-Barkan
+        100    2.00   9.00  2&spades; N -1   &clubs;K  2-Reed-Cavolo vs 11-Madison-Oakley
+        200    1.00  10.00  2N N -2   <span class="ds">&diams;</span>Q  7-Green-Green vs 4-Sherman-Herzog
+        300    0.00  11.00  3<span class="ds">&diams;</span> N -3   <span class="badlead">&clubs;8</span>  9-Grant-Loh vs 6-Haines-Howard
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results13">
+  <table class="board" id="board13">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">13</td>
+      <td class="north">
+      &spades;T<br>
+      <span class="hs">&hearts;</span>AT543<br>
+      <span class="ds">&diams;</span>KJT63<br>
+      &clubs;32<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: North</span><br><span class="nowrap">Vul: Both</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;KJ7<br>
+      <span class="hs">&hearts;</span>KQ62<br>
+      <span class="ds">&diams;</span>A97<br>
+      &clubs;QT4<br>
+      </td>
+      <td class="east">
+      &spades;9532<br>
+      <span class="hs">&hearts;</span>J7<br>
+      <span class="ds">&diams;</span>852<br>
+      &clubs;AK75<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;AQ864<br>
+      <span class="hs">&hearts;</span>98<br>
+      <span class="ds">&diams;</span>Q4<br>
+      &clubs;J986<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>8</td><td></td></tr>
+         <tr><td>15</td><td></td><td>8</td></tr>
+         <tr><td></td><td>9</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1<span class="hs">&diams;</span>&nbsp;1<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &clubs;4 &spades;5 NT4</span></td></tr>
+        <tr><td>EW:&nbsp;1&clubs;&nbsp;1&spades;&nbsp;1NT&nbsp;<span class="ddfail"> &diams;6 &hearts;6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 14 - 14 = 0<br>Par: -90 1NT-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('13','KJ7.KQ62.A97.QT4','T.AT543.KJT63.32','9532.J7.852.AK75','AQ864.98.Q4.J986')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results13">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  200         10.00   1.00  3N W -2   <span class="ds">&diams;</span>T  12-Strauch-Strauch vs 8-Busby-Rathi
+  200         10.00   1.00  3N W -2       3-Abelow-Yates vs 11-Madison-Oakley
+  200         10.00   1.00  2N W -2   <span class="ds">&diams;</span>T  6-Kantor-Mann vs 2-Boyer-Bennett
+  100          7.50   3.50  2N W -1   <span class="ds">&diams;</span>6  5-O'Neill-Chapman vs 1-Bessinger-Anderson
+  100          7.50   3.50  2&spades; E -1   <span class="ds">&diams;</span>Q  10-Schmidt-Watt vs 6-Haines-Howard
+        100    5.00   6.00  2<span class="hs">&hearts;</span> N -1   <span class="opplead">&clubs;4</span>  9-Grant-Loh vs 5-Mezin-Chan
+        100    5.00   6.00  2<span class="hs">&hearts;</span> N -1       4-Roth-Hastie vs 12-Kirchhoff-Roeder
+        100    5.00   6.00  2<span class="ds">&diams;</span> N -1   &clubs;A  1-Shapley-Shapley vs 9-Wright-Stakgold
+        140    3.00   8.00  3&spades; W      <span class="hs">&hearts;</span>A  11-Rosenblum-Denny vs 7-Flaherty-Rimer
+        200    1.00  10.00  2&spades; S -2       8-Lane-Lindvall vs 4-Sherman-Herzog
+        200    1.00  10.00  2<span class="hs">&hearts;</span> N -2   &clubs;A  7-Green-Green vs 3-Pottenger-Barkan
+        200    1.00  10.00  3<span class="ds">&diams;</span> N -2   &clubs;A  2-Reed-Cavolo vs 10-Doughman-LeBendig
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results14">
+  <table class="board" id="board14">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">14</td>
+      <td class="north">
+      &spades;A75432<br>
+      <span class="hs">&hearts;</span>5<br>
+      <span class="ds">&diams;</span>9862<br>
+      &clubs;62<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: East</span><br><span class="nowrap">Vul: None</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;KQ<br>
+      <span class="hs">&hearts;</span>872<br>
+      <span class="ds">&diams;</span>QT7<br>
+      &clubs;AK985<br>
+      </td>
+      <td class="east">
+      &spades;JT9<br>
+      <span class="hs">&hearts;</span>QT643<br>
+      <span class="ds">&diams;</span>4<br>
+      &clubs;QJ73<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;86<br>
+      <span class="hs">&hearts;</span>AKJ9<br>
+      <span class="ds">&diams;</span>AKJ53<br>
+      &clubs;T4<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>4</td><td></td></tr>
+         <tr><td>14</td><td></td><td>6</td></tr>
+         <tr><td></td><td>16</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;3<span class="hs">&diams;</span>&nbsp;3&spades;&nbsp;<span class="ddfail"> &clubs;5 &hearts;6 NT6</span></td></tr>
+        <tr><td>EW:&nbsp;2&clubs;&nbsp;1<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &diams;2 &spades;3 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 17 - 18 = -1<br>Par: +140 3&spades;-NS</td>
+    <td><input type="button" value="C" onclick="javascript:c1('14','KQ.872.QT7.AK985','A75432.5.9862.62','JT9.QT643.4.QJ73','86.AKJ9.AKJ53.T4')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results14">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  300         11.00   0.00  3<span class="hs">&hearts;</span>* E -2  &spades;8  4-Roth-Hastie vs 12-Kirchhoff-Roeder
+  170         10.00   1.00  2&spades; S +2   <span class="badlead"><span class="ds">&diams;</span>8</span>  9-Grant-Loh vs 5-Mezin-Chan
+  140          8.00   3.00  3&spades; N      <span class="opplead">&clubs;K</span>  1-Shapley-Shapley vs 9-Wright-Stakgold
+  140          8.00   3.00  2&spades; S +1   &clubs;A  7-Green-Green vs 3-Pottenger-Barkan
+  140          8.00   3.00  2&spades; N +1   <span class="ds">&diams;</span>4  12-Strauch-Strauch vs 8-Busby-Rathi
+   50          5.50   5.50  2<span class="hs">&hearts;</span> W -1   <span class="ds">&diams;</span>9  6-Kantor-Mann vs 2-Boyer-Bennett
+   50          5.50   5.50  2<span class="hs">&hearts;</span> E -1       3-Abelow-Yates vs 11-Madison-Oakley
+         50    3.00   8.00  4<span class="ds">&diams;</span> S -1   &clubs;A  5-O'Neill-Chapman vs 1-Bessinger-Anderson
+         50    3.00   8.00  4<span class="ds">&diams;</span> S -1   &clubs;A  8-Lane-Lindvall vs 4-Sherman-Herzog
+         50    3.00   8.00  3<span class="ds">&diams;</span> S -1   &clubs;A  11-Rosenblum-Denny vs 7-Flaherty-Rimer
+        100    0.50  10.50  3&spades; N -2   &clubs;3  10-Schmidt-Watt vs 6-Haines-Howard
+        100    0.50  10.50  4<span class="ds">&diams;</span> S -2   &clubs;A  2-Reed-Cavolo vs 10-Doughman-LeBendig
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results15">
+  <table class="board" id="board15">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">15</td>
+      <td class="north">
+      &spades;7<br>
+      <span class="hs">&hearts;</span>6<br>
+      <span class="ds">&diams;</span>KJT7<br>
+      &clubs;KQJT864<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: South</span><br><span class="nowrap">Vul: N-S</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;KQJ98<br>
+      <span class="hs">&hearts;</span>KJ982<br>
+      <span class="ds">&diams;</span>3<br>
+      &clubs;53<br>
+      </td>
+      <td class="east">
+      &spades;643<br>
+      <span class="hs">&hearts;</span>AQ4<br>
+      <span class="ds">&diams;</span>9654<br>
+      &clubs;A92<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;AT52<br>
+      <span class="hs">&hearts;</span>T753<br>
+      <span class="ds">&diams;</span>AQ82<br>
+      &clubs;7<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>10</td><td></td></tr>
+         <tr><td>10</td><td></td><td>10</td></tr>
+         <tr><td></td><td>10</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;4&clubs;&nbsp;4<span class="hs">&diams;</span>&nbsp;<span class="ddfail"> &hearts;3 &spades;3 NT5</span></td></tr>
+        <tr><td>EW:&nbsp;3<span class="hs">&hearts;</span>&nbsp;3&spades;&nbsp;<span class="ddfail"> &clubs;2 &diams;2 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 19 - 16 = +3<br>Par: +100 4&spades;*-EW/4<span class="hs">&hearts;</span>*-EW-1</td>
+    <td><input type="button" value="C" onclick="javascript:c1('15','KQJ98.KJ982.3.53','7.6.KJT7.KQJT864','643.AQ4.9654.A92','AT52.T753.AQ82.7')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results15">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  910         11.00   0.00  4&clubs;* N +1  <span class="ds">&diams;</span>9  10-Schmidt-Watt vs 6-Haines-Howard
+  750         10.00   1.00  5&clubs;* N     <span class="opplead">&spades;8</span>  9-Grant-Loh vs 5-Mezin-Chan
+  150          8.00   3.00  4&clubs; N +1   &spades;6  5-O'Neill-Chapman vs 1-Bessinger-Anderson
+  150          8.00   3.00  4&clubs; N +1       3-Abelow-Yates vs 11-Madison-Oakley
+  150          8.00   3.00  4&clubs; N +1       7-Green-Green vs 3-Pottenger-Barkan
+  100          6.00   5.00  4&spades; W -2   <span class="ds">&diams;</span>7  4-Roth-Hastie vs 12-Kirchhoff-Roeder
+        170    4.50   6.50  3&spades; W +1   &clubs;K  2-Reed-Cavolo vs 10-Doughman-LeBendig
+        170    4.50   6.50  3&spades; W +1   &clubs;K  8-Lane-Lindvall vs 4-Sherman-Herzog
+        200    3.00   8.00  3&spades; W +2   <span class="opplead"><span class="hs">&hearts;</span>7</span>  6-Kantor-Mann vs 2-Boyer-Bennett
+        420    1.50   9.50  4&spades; W      &clubs;K  11-Rosenblum-Denny vs 7-Flaherty-Rimer
+        420    1.50   9.50  4&spades; E      <span class="opplead"><span class="hs">&hearts;</span>6</span>  1-Shapley-Shapley vs 9-Wright-Stakgold
+        630    0.00  11.00  3&spades;* W +1  &clubs;K  12-Strauch-Strauch vs 8-Busby-Rathi
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results16">
+  <table class="board" id="board16">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">16</td>
+      <td class="north">
+      &spades;AKJ84<br>
+      <span class="hs">&hearts;</span>6<br>
+      <span class="ds">&diams;</span>AJT7<br>
+      &clubs;Q65<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: West</span><br><span class="nowrap">Vul: E-W</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;732<br>
+      <span class="hs">&hearts;</span>AQJ43<br>
+      <span class="ds">&diams;</span>KQ6<br>
+      &clubs;82<br>
+      </td>
+      <td class="east">
+      &spades;Q<br>
+      <span class="hs">&hearts;</span>KT98752<br>
+      <span class="ds">&diams;</span>85<br>
+      &clubs;KJT<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;T965<br>
+      <span class="hs">&hearts;</span>-<br>
+      <span class="ds">&diams;</span>9432<br>
+      &clubs;A9743<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>15</td><td></td></tr>
+         <tr><td>12</td><td></td><td>9</td></tr>
+         <tr><td></td><td>4</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;4&clubs;&nbsp;4<span class="hs">&diams;</span>&nbsp;5/4&spades;&nbsp;<span class="ddfail"> &hearts;3 NT6</span></td></tr>
+        <tr><td>EW:&nbsp;4<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &clubs;3 &diams;3 &spades;2 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 21 - 21 = 0<br>Par: +450 5&spades;-N</td>
+    <td><input type="button" value="C" onclick="javascript:c1('16','732.AQJ43.KQ6.82','AKJ84.6.AJT7.Q65','Q.KT98752.85.KJT','T965..9432.A9743')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results16">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  500         11.00   0.00  5<span class="hs">&hearts;</span>* W -2  &spades;8  9-Grant-Loh vs 4-Sherman-Herzog
+  450         10.00   1.00  5&spades; N          7-Green-Green vs 2-Boyer-Bennett
+  200          8.50   2.50  6<span class="hs">&hearts;</span> W -2   &spades;A  3-Abelow-Yates vs 10-Doughman-LeBendig
+  200          8.50   2.50  5<span class="hs">&hearts;</span> W -2   &spades;A  11-Rosenblum-Denny vs 6-Haines-Howard
+  100          6.00   5.00  5<span class="hs">&hearts;</span> W -1   &spades;A  6-Kantor-Mann vs 1-Bessinger-Anderson
+  100          6.00   5.00  5<span class="hs">&hearts;</span> E -1   <span class="opplead">&spades;K</span>  4-Roth-Hastie vs 11-Madison-Oakley
+  100          6.00   5.00  4<span class="hs">&hearts;</span> W -1   &spades;K  1-Shapley-Shapley vs 8-Busby-Rathi
+         50    3.00   8.00  5&spades; N -1   <span class="hs">&hearts;</span>K  10-Schmidt-Watt vs 5-Mezin-Chan
+         50    3.00   8.00  5&spades; N -1   <span class="hs">&hearts;</span>2  8-Lane-Lindvall vs 3-Pottenger-Barkan
+         50    3.00   8.00  5&spades; N -1   <span class="ds">&diams;</span>8  12-Strauch-Strauch vs 7-Flaherty-Rimer
+        100    1.00  10.00  5&spades;* N -1  <span class="hs">&hearts;</span>T  5-O'Neill-Chapman vs 12-Kirchhoff-Roeder
+        620    0.00  11.00  4<span class="hs">&hearts;</span> W      &spades;A  2-Reed-Cavolo vs 9-Wright-Stakgold
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results17">
+  <table class="board" id="board17">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">17</td>
+      <td class="north">
+      &spades;K764<br>
+      <span class="hs">&hearts;</span>T42<br>
+      <span class="ds">&diams;</span>AK7<br>
+      &clubs;T85<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: North</span><br><span class="nowrap">Vul: None</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;AJ8<br>
+      <span class="hs">&hearts;</span>K8<br>
+      <span class="ds">&diams;</span>QT654<br>
+      &clubs;AK9<br>
+      </td>
+      <td class="east">
+      &spades;T32<br>
+      <span class="hs">&hearts;</span>Q93<br>
+      <span class="ds">&diams;</span>J98<br>
+      &clubs;QJ63<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;Q95<br>
+      <span class="hs">&hearts;</span>AJ765<br>
+      <span class="ds">&diams;</span>32<br>
+      &clubs;742<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>10</td><td></td></tr>
+         <tr><td>17</td><td></td><td>6</td></tr>
+         <tr><td></td><td>7</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &clubs;4 &diams;4 &spades;6 NT6</span></td></tr>
+        <tr><td>EW:&nbsp;2&clubs;&nbsp;3<span class="hs">&diams;</span>&nbsp;1&spades;&nbsp;<span class="ddfail"> &hearts;6 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 16 - 16 = 0<br>Par: -110 3<span class="ds">&diams;</span>-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('17','AJ8.K8.QT654.AK9','K764.T42.AK7.T85','T32.Q93.J98.QJ63','Q95.AJ765.32.742')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results17">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  100         11.00   0.00  2N E -2   <span class="hs">&hearts;</span>6  8-Lane-Lindvall vs 3-Pottenger-Barkan
+         90   10.00   1.00  1N W      &spades;4  5-O'Neill-Chapman vs 12-Kirchhoff-Roeder
+        120    7.50   3.50  1N W +1   <span class="badlead">&spades;8</span>  9-Grant-Loh vs 4-Sherman-Herzog
+        120    7.50   3.50  1N W +1   &spades;4  6-Kantor-Mann vs 1-Bessinger-Anderson
+        120    7.50   3.50  1N W +1   &spades;4  7-Green-Green vs 2-Boyer-Bennett
+        120    7.50   3.50  1N W +1   &spades;4  11-Rosenblum-Denny vs 6-Haines-Howard
+        150    3.50   7.50  2N E +1   <span class="hs">&hearts;</span>6  4-Roth-Hastie vs 11-Madison-Oakley
+        150    3.50   7.50  1N W +2   &spades;4  1-Shapley-Shapley vs 8-Busby-Rathi
+        150    3.50   7.50  1N W +2       2-Reed-Cavolo vs 9-Wright-Stakgold
+        150    3.50   7.50  1N W +2       3-Abelow-Yates vs 10-Doughman-LeBendig
+        180    0.50  10.50  1N W +3   &spades;4  10-Schmidt-Watt vs 5-Mezin-Chan
+        180    0.50  10.50  1N W +3   &spades;4  12-Strauch-Strauch vs 7-Flaherty-Rimer
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results18">
+  <table class="board" id="board18">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">18</td>
+      <td class="north">
+      &spades;T743<br>
+      <span class="hs">&hearts;</span>92<br>
+      <span class="ds">&diams;</span>AT652<br>
+      &clubs;AQ<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: East</span><br><span class="nowrap">Vul: N-S</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;J6<br>
+      <span class="hs">&hearts;</span>AJT86<br>
+      <span class="ds">&diams;</span>J987<br>
+      &clubs;K6<br>
+      </td>
+      <td class="east">
+      &spades;KQ8<br>
+      <span class="hs">&hearts;</span>K7543<br>
+      <span class="ds">&diams;</span>K3<br>
+      &clubs;742<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;A952<br>
+      <span class="hs">&hearts;</span>Q<br>
+      <span class="ds">&diams;</span>Q4<br>
+      &clubs;JT9853<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>10</td><td></td></tr>
+         <tr><td>10</td><td></td><td>11</td></tr>
+         <tr><td></td><td>9</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;3&clubs;&nbsp;2<span class="hs">&diams;</span>&nbsp;3&spades;&nbsp;<span class="ddfail"> &hearts;4 NT5</span></td></tr>
+        <tr><td>EW:&nbsp;3<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &clubs;4 &diams;5 &spades;4 NT5/6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 18 - 18 = 0<br>Par: +100 4<span class="hs">&hearts;</span>*-EW-1</td>
+    <td><input type="button" value="C" onclick="javascript:c1('18','J6.AJT86.J987.K6','T743.92.AT652.AQ','KQ8.K7543.K3.742','A952.Q.Q4.JT9853')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results18">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  100         11.00   0.00  4<span class="hs">&hearts;</span>* W -1  <span class="hs">&hearts;</span>9  5-O'Neill-Chapman vs 12-Kirchhoff-Roeder
+   50         10.00   1.00  4<span class="hs">&hearts;</span> E -1   &clubs;J  4-Roth-Hastie vs 11-Madison-Oakley
+    PASS       8.00   3.00  Pass Out      7-Green-Green vs 2-Boyer-Bennett
+    PASS       8.00   3.00  Pass Out      9-Grant-Loh vs 4-Sherman-Herzog
+    PASS       8.00   3.00  Pass Out      12-Strauch-Strauch vs 7-Flaherty-Rimer
+        100    6.00   5.00  3&clubs; S -1   <span class="ds">&diams;</span>8  6-Kantor-Mann vs 1-Bessinger-Anderson
+        140    4.00   7.00  3<span class="hs">&hearts;</span> W      &spades;4  8-Lane-Lindvall vs 3-Pottenger-Barkan
+        140    4.00   7.00  3<span class="hs">&hearts;</span> W          11-Rosenblum-Denny vs 6-Haines-Howard
+        140    4.00   7.00  3<span class="hs">&hearts;</span> E          3-Abelow-Yates vs 10-Doughman-LeBendig
+        170    2.00   9.00  3<span class="hs">&hearts;</span> E +1   <span class="ds">&diams;</span>Q  2-Reed-Cavolo vs 9-Wright-Stakgold
+        420    0.50  10.50  4<span class="hs">&hearts;</span> W      &clubs;A  1-Shapley-Shapley vs 8-Busby-Rathi
+        420    0.50  10.50  4<span class="hs">&hearts;</span> E      &clubs;J  10-Schmidt-Watt vs 5-Mezin-Chan
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results19">
+  <table class="board" id="board19">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">19</td>
+      <td class="north">
+      &spades;Q6<br>
+      <span class="hs">&hearts;</span>AQ652<br>
+      <span class="ds">&diams;</span>J5<br>
+      &clubs;KQ84<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: South</span><br><span class="nowrap">Vul: E-W</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;J3<br>
+      <span class="hs">&hearts;</span>J83<br>
+      <span class="ds">&diams;</span>AQ64<br>
+      &clubs;9732<br>
+      </td>
+      <td class="east">
+      &spades;K9<br>
+      <span class="hs">&hearts;</span>T4<br>
+      <span class="ds">&diams;</span>KT987<br>
+      &clubs;AJ65<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;AT87542<br>
+      <span class="hs">&hearts;</span>K97<br>
+      <span class="ds">&diams;</span>32<br>
+      &clubs;T<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>14</td><td></td></tr>
+         <tr><td>8</td><td></td><td>11</td></tr>
+         <tr><td></td><td>7</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;3<span class="hs">&hearts;</span>&nbsp;3&spades;&nbsp;<span class="ddfail"> &clubs;5 &diams;5 NT6</span></td></tr>
+        <tr><td>EW:&nbsp;2&clubs;&nbsp;2<span class="hs">&diams;</span>&nbsp;<span class="ddfail"> &hearts;4 &spades;4 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 17 - 18 = -1<br>Par: +140 3&spades;-NS/3<span class="hs">&hearts;</span>-NS</td>
+    <td><input type="button" value="C" onclick="javascript:c1('19','J3.J83.AQ64.9732','Q6.AQ652.J5.KQ84','K9.T4.KT987.AJ65','AT87542.K97.32.html')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results19">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  480         11.00   0.00  4&spades; S +2   &clubs;2  8-Lane-Lindvall vs 2-Boyer-Bennett
+  420          9.50   1.50  4&spades; S      <span class="ds">&diams;</span>A  6-Kantor-Mann vs 12-Kirchhoff-Roeder
+  420          9.50   1.50  4&spades; S          12-Strauch-Strauch vs 6-Haines-Howard
+  230          8.00   3.00  2<span class="hs">&hearts;</span> N +4   &spades;K  2-Reed-Cavolo vs 8-Busby-Rathi
+  200          7.00   4.00  3&spades; S +2   <span class="hs">&hearts;</span>3  5-O'Neill-Chapman vs 11-Madison-Oakley
+  140          5.00   6.00  3&spades; S      <span class="hs">&hearts;</span>3  10-Schmidt-Watt vs 4-Sherman-Herzog
+  140          5.00   6.00  3&spades; S      <span class="ds">&diams;</span>A  4-Roth-Hastie vs 10-Doughman-LeBendig
+  140          5.00   6.00  3&spades; N      <span class="opplead"><span class="hs">&hearts;</span>3</span>  7-Green-Green vs 1-Bessinger-Anderson
+         50    2.00   9.00  4&spades; S -1   <span class="hs">&hearts;</span>8  9-Grant-Loh vs 3-Pottenger-Barkan
+         50    2.00   9.00  4&spades; S -1       3-Abelow-Yates vs 9-Wright-Stakgold
+         50    2.00   9.00  3&spades; S -1       11-Rosenblum-Denny vs 5-Mezin-Chan
+        150    0.00  11.00  3N N -3   <span class="badlead"><span class="ds">&diams;</span>J</span>  1-Shapley-Shapley vs 7-Flaherty-Rimer
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results20">
+  <table class="board" id="board20">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">20</td>
+      <td class="north">
+      &spades;T75<br>
+      <span class="hs">&hearts;</span>72<br>
+      <span class="ds">&diams;</span>874<br>
+      &clubs;Q9762<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: West</span><br><span class="nowrap">Vul: Both</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;962<br>
+      <span class="hs">&hearts;</span>QT96<br>
+      <span class="ds">&diams;</span>T9653<br>
+      &clubs;3<br>
+      </td>
+      <td class="east">
+      &spades;AKQ4<br>
+      <span class="hs">&hearts;</span>J854<br>
+      <span class="ds">&diams;</span>AQJ<br>
+      &clubs;AJ<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;J83<br>
+      <span class="hs">&hearts;</span>AK3<br>
+      <span class="ds">&diams;</span>K2<br>
+      &clubs;KT854<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>2</td><td></td></tr>
+         <tr><td>2</td><td></td><td>22</td></tr>
+         <tr><td></td><td>14</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;2&clubs;&nbsp;<span class="ddfail"> &diams;4 &hearts;3 &spades;4 NT6</span></td></tr>
+        <tr><td>EW:&nbsp;3<span class="hs">&diams;</span>&nbsp;4<span class="hs">&hearts;</span>&nbsp;3&spades;&nbsp;<span class="ddfail"> &clubs;5 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 18 - 18 = 0<br>Par: -620 4<span class="hs">&hearts;</span>-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('20','962.QT96.T9653.3','T75.72.874.Q9762','AKQ4.J854.AQJ.AJ','J83.AK3.K2.KT854')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results20">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  200         10.00   1.00  2N E -2   &clubs;5  8-Lane-Lindvall vs 2-Boyer-Bennett
+  200         10.00   1.00  2N E -2   &clubs;5  12-Strauch-Strauch vs 6-Haines-Howard
+  200         10.00   1.00  2N E -2   &clubs;4  6-Kantor-Mann vs 12-Kirchhoff-Roeder
+  100          7.00   4.00  2N E -1   <span class="hs">&hearts;</span>K  3-Abelow-Yates vs 9-Wright-Stakgold
+  100          7.00   4.00  2N E -1   &clubs;5  4-Roth-Hastie vs 10-Doughman-LeBendig
+  100          7.00   4.00  4&spades; E -1   <span class="hs">&hearts;</span>K  1-Shapley-Shapley vs 7-Flaherty-Rimer
+        170    5.00   6.00  3<span class="hs">&hearts;</span> E +1       11-Rosenblum-Denny vs 5-Mezin-Chan
+        620    2.00   9.00  4<span class="hs">&hearts;</span> W      <span class="opplead">&spades;8</span>  7-Green-Green vs 1-Bessinger-Anderson
+        620    2.00   9.00  4<span class="hs">&hearts;</span> W      <span class="opplead">&clubs;4</span>  10-Schmidt-Watt vs 4-Sherman-Herzog
+        620    2.00   9.00  4<span class="hs">&hearts;</span> W          2-Reed-Cavolo vs 8-Busby-Rathi
+        620    2.00   9.00  4<span class="hs">&hearts;</span> E      <span class="hs">&hearts;</span>A  9-Grant-Loh vs 3-Pottenger-Barkan
+        620    2.00   9.00  4<span class="hs">&hearts;</span> E      <span class="hs">&hearts;</span>K  5-O'Neill-Chapman vs 11-Madison-Oakley
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results21">
+  <table class="board" id="board21">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">21</td>
+      <td class="north">
+      &spades;94<br>
+      <span class="hs">&hearts;</span>843<br>
+      <span class="ds">&diams;</span>AQJ7<br>
+      &clubs;A852<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: North</span><br><span class="nowrap">Vul: N-S</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;AQ3<br>
+      <span class="hs">&hearts;</span>AQ5<br>
+      <span class="ds">&diams;</span>3<br>
+      &clubs;KJT763<br>
+      </td>
+      <td class="east">
+      &spades;KJ8652<br>
+      <span class="hs">&hearts;</span>JT2<br>
+      <span class="ds">&diams;</span>942<br>
+      &clubs;Q<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;T7<br>
+      <span class="hs">&hearts;</span>K976<br>
+      <span class="ds">&diams;</span>KT865<br>
+      &clubs;94<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>11</td><td></td></tr>
+         <tr><td>16</td><td></td><td>7</td></tr>
+         <tr><td></td><td>6</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;1<span class="hs">&diams;</span>&nbsp;<span class="ddfail"> &clubs;2 &hearts;5 &spades;2 NT4</span></td></tr>
+        <tr><td>EW:&nbsp;5&clubs;&nbsp;1<span class="hs">&hearts;</span>&nbsp;5&spades;&nbsp;1NT&nbsp;<span class="ddfail"> &diams;6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 18 - 18 = 0<br>Par: -450 5&spades;-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('21','AQ3.AQ5.3.KJT763','94.843.AQJ7.A852','KJ8652.JT2.942.Q','T7.K976.KT865.94')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results21">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+        200   11.00   0.00  3&spades; E +2   <span class="opplead">&clubs;8</span>  9-Grant-Loh vs 3-Pottenger-Barkan
+        230   10.00   1.00  3&spades; E +3   <span class="opplead">&clubs;8</span>  2-Reed-Cavolo vs 8-Busby-Rathi
+        450    5.00   6.00  4&spades; E +1   &spades;T  6-Kantor-Mann vs 12-Kirchhoff-Roeder
+        450    5.00   6.00  4&spades; E +1   &spades;T  10-Schmidt-Watt vs 4-Sherman-Herzog
+        450    5.00   6.00  4&spades; E +1   <span class="hs">&hearts;</span>7  1-Shapley-Shapley vs 7-Flaherty-Rimer
+        450    5.00   6.00  4&spades; E +1   <span class="hs">&hearts;</span>6  4-Roth-Hastie vs 10-Doughman-LeBendig
+        450    5.00   6.00  4&spades; E +1   <span class="ds">&diams;</span>6  3-Abelow-Yates vs 9-Wright-Stakgold
+        450    5.00   6.00  4&spades; E +1   <span class="ds">&diams;</span>6  5-O'Neill-Chapman vs 11-Madison-Oakley
+        450    5.00   6.00  4&spades; E +1   <span class="ds">&diams;</span>6  8-Lane-Lindvall vs 2-Boyer-Bennett
+        450    5.00   6.00  4&spades; E +1       7-Green-Green vs 1-Bessinger-Anderson
+        450    5.00   6.00  4&spades; E +1       11-Rosenblum-Denny vs 5-Mezin-Chan
+        480    0.00  11.00  4&spades; E +2       12-Strauch-Strauch vs 6-Haines-Howard
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results22">
+  <table class="board" id="board22">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">22</td>
+      <td class="north">
+      &spades;72<br>
+      <span class="hs">&hearts;</span>Q874<br>
+      <span class="ds">&diams;</span>874<br>
+      &clubs;T853<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: East</span><br><span class="nowrap">Vul: E-W</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;A83<br>
+      <span class="hs">&hearts;</span>93<br>
+      <span class="ds">&diams;</span>KQJ6<br>
+      &clubs;AQ92<br>
+      </td>
+      <td class="east">
+      &spades;QJ9<br>
+      <span class="hs">&hearts;</span>AJ652<br>
+      <span class="ds">&diams;</span>T52<br>
+      &clubs;J6<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;KT654<br>
+      <span class="hs">&hearts;</span>KT<br>
+      <span class="ds">&diams;</span>A93<br>
+      &clubs;K74<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>2</td><td></td></tr>
+         <tr><td>16</td><td></td><td>9</td></tr>
+         <tr><td></td><td>13</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;<span class="ddfail"> &clubs;4 &diams;3/4 &hearts;4 &spades;4 NT4</span></td></tr>
+        <tr><td>EW:&nbsp;3&clubs;&nbsp;3<span class="hs">&diams;</span>&nbsp;3<span class="hs">&hearts;</span>&nbsp;3&spades;&nbsp;3NT</td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 13 - 14 = -1<br>Par: -600 3NT-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('22','A83.93.KQJ6.AQ92','72.Q874.874.T853','QJ9.AJ652.T52.J6','KT654.KT.A93.K74')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results22">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+        110   11.00   0.00  2<span class="hs">&hearts;</span> E      <span class="opplead">&spades;7</span>  9-Grant-Loh vs 2-Boyer-Bennett
+        120    9.00   2.00  2N W      &spades;7  12-Strauch-Strauch vs 5-Mezin-Chan
+        120    9.00   2.00  2N W      <span class="ds">&diams;</span>8  2-Reed-Cavolo vs 7-Flaherty-Rimer
+        120    9.00   2.00  2N W          11-Rosenblum-Denny vs 4-Sherman-Herzog
+        600    5.00   6.00  3N W      &spades;7  1-Shapley-Shapley vs 6-Haines-Howard
+        600    5.00   6.00  3N W      &spades;7  3-Abelow-Yates vs 8-Busby-Rathi
+        600    5.00   6.00  3N W      &spades;7  4-Roth-Hastie vs 9-Wright-Stakgold
+        600    5.00   6.00  3N W      &spades;7  5-O'Neill-Chapman vs 10-Doughman-LeBendig
+        600    5.00   6.00  3N W          7-Green-Green vs 12-Kirchhoff-Roeder
+        630    2.00   9.00  3N W +1       8-Lane-Lindvall vs 1-Bessinger-Anderson
+        660    0.50  10.50  3N W +2   &clubs;3  6-Kantor-Mann vs 11-Madison-Oakley
+        660    0.50  10.50  3N W +2   <span class="badlead">&clubs;2</span>  10-Schmidt-Watt vs 3-Pottenger-Barkan
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results23">
+  <table class="board" id="board23">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">23</td>
+      <td class="north">
+      &spades;J985<br>
+      <span class="hs">&hearts;</span>T9<br>
+      <span class="ds">&diams;</span>8742<br>
+      &clubs;963<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: South</span><br><span class="nowrap">Vul: Both</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;7643<br>
+      <span class="hs">&hearts;</span>KJ72<br>
+      <span class="ds">&diams;</span>Q95<br>
+      &clubs;A4<br>
+      </td>
+      <td class="east">
+      &spades;A2<br>
+      <span class="hs">&hearts;</span>854<br>
+      <span class="ds">&diams;</span>AJT6<br>
+      &clubs;K875<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;KQT<br>
+      <span class="hs">&hearts;</span>AQ63<br>
+      <span class="ds">&diams;</span>K3<br>
+      &clubs;QJT2<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>1</td><td></td></tr>
+         <tr><td>10</td><td></td><td>12</td></tr>
+         <tr><td></td><td>17</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;<span class="ddfail"> &clubs;6 &diams;4 &hearts;5 &spades;6 NT5</span></td></tr>
+        <tr><td>EW:&nbsp;1&clubs;&nbsp;3<span class="hs">&diams;</span>&nbsp;2<span class="hs">&hearts;</span>&nbsp;1&spades;&nbsp;2NT</td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 15 - 14 = +1<br>Par: -120 2NT-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('23','7643.KJ72.Q95.A4','J985.T9.8742.963','A2.854.AJT6.K875','KQT.AQ63.K3.QJT2')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results23">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  120         11.00   0.00  1N S +1       12-Strauch-Strauch vs 5-Mezin-Chan
+   90          8.50   2.50  1N S      &spades;7  6-Kantor-Mann vs 11-Madison-Oakley
+   90          8.50   2.50  1N S      <span class="opplead"><span class="hs">&hearts;</span>8</span>  9-Grant-Loh vs 2-Boyer-Bennett
+   90          8.50   2.50  1N S      <span class="opplead"><span class="hs">&hearts;</span>5</span>  1-Shapley-Shapley vs 6-Haines-Howard
+   90          8.50   2.50  1N S      <span class="hs">&hearts;</span>2  11-Rosenblum-Denny vs 4-Sherman-Herzog
+        100    4.50   6.50  1N S -1   &spades;7  5-O'Neill-Chapman vs 10-Doughman-LeBendig
+        100    4.50   6.50  1N S -1   &spades;7  10-Schmidt-Watt vs 3-Pottenger-Barkan
+        100    4.50   6.50  1N S -1   <span class="hs">&hearts;</span>2  4-Roth-Hastie vs 9-Wright-Stakgold
+        100    4.50   6.50  1N S -1       3-Abelow-Yates vs 8-Busby-Rathi
+        140    2.00   9.00  3<span class="hs">&hearts;</span> W          7-Green-Green vs 12-Kirchhoff-Roeder
+        200    0.50  10.50  1N S -2   &spades;7  8-Lane-Lindvall vs 1-Bessinger-Anderson
+        200    0.50  10.50  2&spades; S -2   &clubs;A  2-Reed-Cavolo vs 7-Flaherty-Rimer
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results24">
+  <table class="board" id="board24">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">24</td>
+      <td class="north">
+      &spades;J5432<br>
+      <span class="hs">&hearts;</span>74<br>
+      <span class="ds">&diams;</span>J42<br>
+      &clubs;K73<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: West</span><br><span class="nowrap">Vul: None</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;Q7<br>
+      <span class="hs">&hearts;</span>KJ5<br>
+      <span class="ds">&diams;</span>KQ8<br>
+      &clubs;JT942<br>
+      </td>
+      <td class="east">
+      &spades;KT<br>
+      <span class="hs">&hearts;</span>AT82<br>
+      <span class="ds">&diams;</span>T965<br>
+      &clubs;Q86<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;A986<br>
+      <span class="hs">&hearts;</span>Q963<br>
+      <span class="ds">&diams;</span>A73<br>
+      &clubs;A5<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>5</td><td></td></tr>
+         <tr><td>12</td><td></td><td>9</td></tr>
+         <tr><td></td><td>14</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;2&spades;&nbsp;1NT&nbsp;<span class="ddfail"> &clubs;4 &diams;5 &hearts;5</span></td></tr>
+        <tr><td>EW:&nbsp;2&clubs;&nbsp;1<span class="hs">&diams;</span>&nbsp;2<span class="hs">&hearts;</span>&nbsp;<span class="ddfail"> &spades;5 NT6</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 16 - 17 = -1<br>Par: +100 3<span class="hs">&hearts;</span>*-EW/3&clubs;*-EW-1</td>
+    <td><input type="button" value="C" onclick="javascript:c1('24','Q7.KJ5.KQ8.JT942','J5432.74.J42.K73','KT.AT82.T965.Q86','A986.Q963.A73.A5')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results24">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  140          9.50   1.50  3&spades; S          12-Strauch-Strauch vs 5-Mezin-Chan
+  140          9.50   1.50  2&spades; N +1   &clubs;6  1-Shapley-Shapley vs 6-Haines-Howard
+  140          9.50   1.50  2&spades; N +1   &clubs;6  7-Green-Green vs 12-Kirchhoff-Roeder
+  140          9.50   1.50  2&spades; N +1   &clubs;6  11-Rosenblum-Denny vs 4-Sherman-Herzog
+  110          5.50   5.50  2&spades; N      <span class="ds">&diams;</span>T  5-O'Neill-Chapman vs 10-Doughman-LeBendig
+  110          5.50   5.50  2&spades; N      <span class="ds">&diams;</span>T  10-Schmidt-Watt vs 3-Pottenger-Barkan
+  110          5.50   5.50  2&spades; N      &clubs;6  4-Roth-Hastie vs 9-Wright-Stakgold
+  110          5.50   5.50  2&spades; N          3-Abelow-Yates vs 8-Busby-Rathi
+  100          3.00   8.00  1N W -2   &spades;3  9-Grant-Loh vs 2-Boyer-Bennett
+         50    2.00   9.00  3&spades; N -1   <span class="hs">&hearts;</span>A  6-Kantor-Mann vs 11-Madison-Oakley
+        100    1.00  10.00  4&spades; N -2       8-Lane-Lindvall vs 1-Bessinger-Anderson
+        120    0.00  11.00  1N W +1   <span class="hs">&hearts;</span>7  2-Reed-Cavolo vs 7-Flaherty-Rimer
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results25">
+  <table class="board" id="board25">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">25</td>
+      <td class="north">
+      &spades;AT54<br>
+      <span class="hs">&hearts;</span>82<br>
+      <span class="ds">&diams;</span>AK64<br>
+      &clubs;K96<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: North</span><br><span class="nowrap">Vul: E-W</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;J962<br>
+      <span class="hs">&hearts;</span>A63<br>
+      <span class="ds">&diams;</span>T3<br>
+      &clubs;T874<br>
+      </td>
+      <td class="east">
+      &spades;7<br>
+      <span class="hs">&hearts;</span>JT97<br>
+      <span class="ds">&diams;</span>J9872<br>
+      &clubs;J32<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;KQ83<br>
+      <span class="hs">&hearts;</span>KQ54<br>
+      <span class="ds">&diams;</span>Q5<br>
+      &clubs;AQ5<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>14</td><td></td></tr>
+         <tr><td>5</td><td></td><td>3</td></tr>
+         <tr><td></td><td>18</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;4&clubs;&nbsp;3/4<span class="hs">&diams;</span>&nbsp;4<span class="hs">&hearts;</span>&nbsp;6&spades;&nbsp;5NT</td></tr>
+        <tr><td>EW:&nbsp;<span class="ddfail"> &clubs;2 &diams;3 &hearts;3 &spades;1 NT2</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 15 - 15 = 0<br>Par: +980 6&spades;-NS</td>
+    <td><input type="button" value="C" onclick="javascript:c1('25','J962.A63.T3.T874','AT54.82.AK64.K96','7.JT97.J9872.J32','KQ83.KQ54.Q5.AQ5')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results25">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  980          9.50   1.50  6&spades; S      <span class="hs">&hearts;</span>A  1-Shapley-Shapley vs 5-Mezin-Chan
+  980          9.50   1.50  6&spades; N      <span class="hs">&hearts;</span>J  10-Schmidt-Watt vs 2-Boyer-Bennett
+  980          9.50   1.50  6&spades; N      <span class="badlead"><span class="hs">&hearts;</span>8</span>  9-Grant-Loh vs 1-Bessinger-Anderson
+  980          9.50   1.50  6&spades; N          3-Abelow-Yates vs 7-Flaherty-Rimer
+  450          7.00   4.00  5&spades; N      <span class="hs">&hearts;</span>J  8-Lane-Lindvall vs 12-Kirchhoff-Roeder
+         50    4.50   6.50  6&spades; N -1   <span class="hs">&hearts;</span>J  5-O'Neill-Chapman vs 9-Wright-Stakgold
+         50    4.50   6.50  6&spades; N -1   <span class="hs">&hearts;</span>J  12-Strauch-Strauch vs 4-Sherman-Herzog
+         50    4.50   6.50  6&spades; N -1   &clubs;2  11-Rosenblum-Denny vs 3-Pottenger-Barkan
+         50    4.50   6.50  6&spades; N -1       7-Green-Green vs 11-Madison-Oakley
+        100    1.50   9.50  6N N -2   <span class="hs">&hearts;</span>J  6-Kantor-Mann vs 10-Doughman-LeBendig
+        100    1.50   9.50  6N N -2   <span class="opplead"><span class="hs">&hearts;</span>6</span>  4-Roth-Hastie vs 8-Busby-Rathi
+        200    0.00  11.00  6<span class="hs">&hearts;</span> S -4   <span class="ds">&diams;</span>T  2-Reed-Cavolo vs 6-Haines-Howard
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results26">
+  <table class="board" id="board26">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">26</td>
+      <td class="north">
+      &spades;T72<br>
+      <span class="hs">&hearts;</span>42<br>
+      <span class="ds">&diams;</span>875<br>
+      &clubs;KQ765<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: East</span><br><span class="nowrap">Vul: Both</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;Q93<br>
+      <span class="hs">&hearts;</span>AT7<br>
+      <span class="ds">&diams;</span>AK43<br>
+      &clubs;983<br>
+      </td>
+      <td class="east">
+      &spades;8654<br>
+      <span class="hs">&hearts;</span>K63<br>
+      <span class="ds">&diams;</span>T62<br>
+      &clubs;JT2<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;AKJ<br>
+      <span class="hs">&hearts;</span>QJ985<br>
+      <span class="ds">&diams;</span>QJ9<br>
+      &clubs;A4<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>5</td><td></td></tr>
+         <tr><td>13</td><td></td><td>4</td></tr>
+         <tr><td></td><td>18</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;2/3&clubs;&nbsp;1<span class="hs">&diams;</span>&nbsp;2<span class="hs">&hearts;</span>&nbsp;1&spades;&nbsp;2NT</td></tr>
+        <tr><td>EW:&nbsp;<span class="ddfail"> &clubs;4 &diams;6/5 &hearts;5 &spades;5 NT5</span></td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 15 - 14 = +1<br>Par: +120 2NT-NS</td>
+    <td><input type="button" value="C" onclick="javascript:c1('26','Q93.AT7.AK43.983','T72.42.875.KQ765','8654.K63.T62.JT2','AKJ.QJ985.QJ9.A4')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results26">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+  120         11.00   0.00  1N S +1   &spades;3  9-Grant-Loh vs 1-Bessinger-Anderson
+  110          8.00   3.00  2<span class="hs">&hearts;</span> N          7-Green-Green vs 11-Madison-Oakley
+  110          8.00   3.00  1<span class="hs">&hearts;</span> S +1   <span class="ds">&diams;</span>A  2-Reed-Cavolo vs 6-Haines-Howard
+  110          8.00   3.00  1<span class="hs">&hearts;</span> S +1   <span class="ds">&diams;</span>A  4-Roth-Hastie vs 8-Busby-Rathi
+  110          8.00   3.00  1<span class="hs">&hearts;</span> S +1   <span class="ds">&diams;</span>A  5-O'Neill-Chapman vs 9-Wright-Stakgold
+  110          8.00   3.00  1<span class="hs">&hearts;</span> S +1   <span class="ds">&diams;</span>A  8-Lane-Lindvall vs 12-Kirchhoff-Roeder
+   90          5.00   6.00  2&clubs; S      <span class="ds">&diams;</span>A  12-Strauch-Strauch vs 4-Sherman-Herzog
+        100    3.00   8.00  3N S -1   <span class="ds">&diams;</span>K  6-Kantor-Mann vs 10-Doughman-LeBendig
+        100    3.00   8.00  3N N -1       11-Rosenblum-Denny vs 3-Pottenger-Barkan
+        100    3.00   8.00  2N N -1       3-Abelow-Yates vs 7-Flaherty-Rimer
+        200    1.00  10.00  3N N -2   <span class="opplead">&spades;3</span>  1-Shapley-Shapley vs 5-Mezin-Chan
+        300    0.00  11.00  3N N -3   &spades;8  10-Schmidt-Watt vs 2-Boyer-Bennett
+</pre>
+</td>
+</tr>
+
+<tr>
+<td class="board_analysis" id="board_results27">
+  <table class="board" id="board27">
+  <tr><td>
+    <table class="board_top"><tr>
+      <td class="boardnum">27</td>
+      <td class="north">
+      &spades;T94<br>
+      <span class="hs">&hearts;</span>J64<br>
+      <span class="ds">&diams;</span>T2<br>
+      &clubs;A9542<br>
+      </td>
+      <td class="dlrvul"><span class="nowrap">Dlr: South</span><br><span class="nowrap">Vul: None</span></td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_middle"><tr>
+      <td class="west">
+      &spades;AK<br>
+      <span class="hs">&hearts;</span>AKT92<br>
+      <span class="ds">&diams;</span>KJ6<br>
+      &clubs;KT7<br>
+      </td>
+      <td class="east">
+      &spades;QJ8652<br>
+      <span class="hs">&hearts;</span>Q83<br>
+      <span class="ds">&diams;</span>7<br>
+      &clubs;Q83<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td>
+    <table class="board_bottom"><tr>
+      <td class="south">
+      &spades;73<br>
+      <span class="hs">&hearts;</span>75<br>
+      <span class="ds">&diams;</span>AQ98543<br>
+      &clubs;J6<br>
+      </td>
+    </tr></table>
+  </td></tr>
+  </table>
+  <table class="hcp_makeable"><tr>
+    <td>
+      <table class="HCP">
+         <tr><td></td><td>5</td><td></td></tr>
+         <tr><td>21</td><td></td><td>7</td></tr>
+         <tr><td></td><td>7</td><td></td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="DDmakes">
+        <tr><td><span class="ul">Double Dummy Makes</span></td></tr>
+        <tr><td>NS:&nbsp;<span class="ddfail"> &clubs;4 &diams;6 &hearts;1 &spades;1 NT2</span></td></tr>
+        <tr><td>EW:&nbsp;3&clubs;&nbsp;1<span class="hs">&diams;</span>&nbsp;5<span class="hs">&hearts;</span>&nbsp;5&spades;&nbsp;5NT</td></tr>
+      </table>
+    </td>
+  </tr></table>
+  <table class="lott_par_copyaids"><tr>
+    <td>LoTT: 17 - 17 = 0<br>Par: -460 5NT-EW</td>
+    <td><input type="button" value="C" onclick="javascript:c1('27','AK.AKT92.KJ6.KT7','T94.J64.T2.A9542','QJ8652.Q83.7.Q83','73.75.AQ98543.J6')"></td>
+  </tr></table>
+</td>
+<td class="results" id="results27">
+<pre>
+  N-S   E-W    N-S    E-W   Contract  Ld
+   50         11.00   0.00  6N W -1       7-Green-Green vs 11-Madison-Oakley
+        450   10.00   1.00  5<span class="hs">&hearts;</span> W      <span class="ds">&diams;</span>T  10-Schmidt-Watt vs 2-Boyer-Bennett
+        480    6.50   4.50  5&spades; E +1   <span class="ds">&diams;</span>A  4-Roth-Hastie vs 8-Busby-Rathi
+        480    6.50   4.50  5&spades; E +1   <span class="ds">&diams;</span>A  6-Kantor-Mann vs 10-Doughman-LeBendig
+        480    6.50   4.50  5&spades; E +1   &clubs;J  12-Strauch-Strauch vs 4-Sherman-Herzog
+        480    6.50   4.50  4&spades; W +2   &clubs;A  8-Lane-Lindvall vs 12-Kirchhoff-Roeder
+        480    6.50   4.50  4&spades; E +2   <span class="ds">&diams;</span>A  11-Rosenblum-Denny vs 3-Pottenger-Barkan
+        480    6.50   4.50  4&spades; E +2   <span class="ds">&diams;</span>Q  9-Grant-Loh vs 1-Bessinger-Anderson
+        490    1.50   9.50  4N W +2   <span class="ds">&diams;</span>T  2-Reed-Cavolo vs 6-Haines-Howard
+        490    1.50   9.50  3N W +3   <span class="ds">&diams;</span>T  1-Shapley-Shapley vs 5-Mezin-Chan
+        490    1.50   9.50  3N W +3   <span class="ds">&diams;</span>T  3-Abelow-Yates vs 7-Flaherty-Rimer
+        490    1.50   9.50  3N W +3   <span class="ds">&diams;</span>T  5-O'Neill-Chapman vs 9-Wright-Stakgold
+</pre>
+</td>
+</tr>
+
+</table>
+</div></body>
+
+<!-- Mirrored from www.adventuresinbridge.com/finals/1507/150829a.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Apr 2017 09:27:30 GMT -->
+</html>
