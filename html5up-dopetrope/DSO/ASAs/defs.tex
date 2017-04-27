@@ -1,0 +1,138 @@
+% !TEX root = main.tex
+
+\begin{figure}[h]
+\oneCol{.45}
+{
+\gameName{$\gameKRec_{\Sigma}^{\emph{Alice}}$}
+$K\getsr \emph{\textbf{K}}$\\
+$K'\getsr \emph{\textbf{K'}}$\\
+$\sigma\gets \epsilon$\\
+$K_0\getsr \emph{Alice}^{\mathtt{Enc}}(K')$\\
+Return $(K=K_0)$\\
+\proc{$\mathtt{Enc}(M)$}
+$(C,\sigma)\getsr\emph{\textbf{E'}}(K',K,M,\sigma)$\\
+Return $C$
+}
+\vspace{-1ex}
+\end{figure}
+
+\begin{figure}[h]
+\oneCol{.45}
+{
+\gameName{$\gameDetect_{\Pi,\Sigma}^{\emph{Bob}}$}
+$b\getsr \bits$\\
+$K'\getsr \emph{\textbf{K'}}$\\
+$\sigma\gets \epsilon$\\
+$b'\getsr \emph{Bob}^{\mathtt{Enc}}$\\
+Return $(b=b')$\\
+\proc{$\mathtt{Enc}(K,M)$}
+If ($b=1$) then $(C,\sigma)\getsr \emph{\textbf{E}}(K,M,\sigma)$\\
+Else $(C,\sigma)\getsr \emph{\textbf{E'}}(K',K,M,\sigma)$\\
+Return $(C,\sigma)$
+}
+\vspace{-1ex}
+\end{figure}
+
+\begin{figure}[h]
+\oneCol{.45}
+{
+\gameName{$\gameDETECT_{\Pi,\Pi'}^{\emph{Bob}}$}
+$b\getsr \bits$\\
+$K'\getsr \emph{\textbf{K'}}$\\
+$b'\getsr \emph{Bob}^{\mathtt{Enc}}$\\
+Return $(b=b')$\\
+\proc{$\mathtt{Key}(i)$}
+If($K_i=\bot$) then ($K_i\getsr \emph{\textbf{K}}; \sigma_i \gets \epsilon)$\\
+Return $K_i$\\
+\proc{$\mathtt{Enc}(M,i)$}
+If($K_i=\bot$) then Return $\bot$\\
+If ($b=1$) then $(C,\sigma_i)\getsr \emph{\textbf{E}}(K_i,M,\sigma_i)$\\
+Else $(C,\sigma_i)\getsr \emph{\textbf{E'}}(K',K_i,M,\sigma_i,i)$\\
+Return $C$
+}
+\vspace{-1ex}
+\end{figure}
+
+$$\Adv^{\text{kr}}_{\Sigma} (\emph{Alice}) = \Pr[\gameKRec_{\Sigma}^{\emph{Alice}}\Rightarrow \text{true}]$$
+
+$$\Adv^{\text{sdet}}_{\Pi,\Sigma} (\emph{Bob}) = 2\Pr[\gameDetect_{\Pi,\Sigma}^{\emph{Bob}}\Rightarrow \text{true}]-1$$
+
+\begin{figure}[h]
+\twoCols{0.35}{0.35}
+{
+\proc{$\textbf{\emph{E}}(K',K,M)$}
+$x\getsr \{0,1,\dots (n-1)\}$\\
+$r\getsr \bits^{n-l-1}$\\
+$IV\gets \emph{\textbf{B}}(K',K[x]||\langle x\rangle||r)$\\
+$C\gets E^*(K,M,IV)$\\
+Return $C$
+}
+{
+\proc{$\textbf{\emph{A}}(K',(C_1,C_2\dots C_{\lfloor n\ln n\rfloor}))$}
+For $j=1,2,\dots \lfloor n\ln n\rfloor\{$\\
+$b||x||r\gets \textbf{\emph{B}}^{-1}(K',X(C_j))$\\
+$K[x]=b\}$\\
+Return $K$
+}
+\end{figure}
+
+$$\Adv^{\text{surv}}_{\Pi,\Sigma}(\emph{Alice}) = 1$$
+
+$$\Adv^{\text{det}}_{\Pi,\Sigma}(\emph{Bob})\le \frac{q^2}{2^{n-l-1}}+\Adv^{\text{prf}}_{\emph{\textbf{B}}}(\emph{Bob-PRF})$$
+
+\begin{figure}[h]
+\twoCols{0.45}{0.45}
+{
+\proc{$\textbf{\emph{E}}(K',K,(M_0,M_1\dots M_{n-1}))$}
+For $j=0,1,\dots (n-1)\{$\\
+$C_j\gets \bot$\\
+While $(C_j=\bot) \{$\\
+$C'\getsr E(K,M_j)$\\
+If $(F(K',C')=K[j])$ then $C_j\gets C'$\\
+$\}\}$\\
+Return $C_0,C_1\dots C_{n-1}$
+}
+{
+\proc{$\textbf{\emph{A}}(K',(C_0,C_1\dots C_{n-1}))$}
+For $j=0,1,\dots (n-1)\{$\\
+$K[j]\gets F(K',C_j)\}$\\
+Return $K$
+}
+\end{figure}
+
+$$\Adv^{\text{det}}_{\Pi,\Sigma}(\emph{Bob})\le \frac{q^2}{2^{(2^r)}}+\Adv^{\text{prf}}_{\emph{\textbf{F}}}(\emph{Bob-PRF})$$
+
+\begin{figure}[h]
+\twoCols{0.45}{0.45}
+{
+\proc{$\textbf{\emph{E}}(K',K,M)$}
+$C\gets \bot;\quad j\gets 0$\\
+While $((C=\bot) \land (j<s) ) \{$\\
+$j\gets j+1$\\
+$C'\getsr E(K,M)$\\
+$(v,t)\gets H(K',C')$\\
+If $(K[t]=v)$ then $C\gets C'$\\
+$\}\}$\\
+Return $C$
+}
+{
+\proc{$\textbf{\emph{A}}(K',(C_1\dots C_{q}))$}
+For $j=1,\dots q \{$\\
+$(v,t)\gets H(K',C_j)\}$\\
+$K[t]\gets v$\\
+Return $K$
+}
+\end{figure}
+
+
+$$\Adv^{\text{kr}}_{\Sigma}(\emph{Alice})+\Adv_H^{\text{prf}}(\emph{Alice-PRF})\ge 1 - \delta(q,s,n)$$
+
+$$2^{-\textbf{H}_\infty(\textbf{\emph{E}})} = \max_{K,M,C} \Pr[E(K,M)=_\$C]$$
+
+$$\delta(q,s,n) \le ne^{-\frac{q}{n}}+q2^{-s} + (q^2s^2)2^{-\textbf{H}_\infty(\textbf{\emph{E}})-1}$$
+
+$$\Adv^{\text{sdet}}_{\Pi,\Sigma} (\emph{Bob}) \le 2\Adv^{\text{prf}}_{H} (\emph{Bob-PRF}) + (k^2s^2)2^{-\textbf{H}_\infty(\textbf{\emph{E}})} $$
+
+$$\Adv^\text{surv}_{\Pi,\Sigma}(Alice)=0$$
+
+

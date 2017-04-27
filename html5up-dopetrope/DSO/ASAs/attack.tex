@@ -1,0 +1,139 @@
+% !TEX root = main.tex
+\pagebreak
+\section{Attack}\label{sec-attack}
+First, we define an instance of $\Pi=(F_1,F_2,F_3)$. Here, we assume that we have a PRF $H$ where $H\colon \mathcal{K} \times G \rightarrow \mathbf{Z}_m$.
+
+\begin{figure}[h]
+\twoCols{.32}{.32}
+{
+\proc{$F_1(K)$}
+$x\getsr\mathbf{Z}_m$\\
+Return $x$
+}
+{
+\proc{$F_2(K,X)$}
+$y\gets H(K,X)$\\
+Return $y$
+}
+\vspace{-1ex}
+\label{fig-attack}
+\end{figure}
+
+Here we present an adversary $\mathbb{BB}$, for $\Pi$ defined above. 
+
+\begin{figure}[h]
+\oneCol{.32}
+{
+\advName{$\mathbb{BB}(K,X,Y)$}
+$y\gets H(K,X)$\\
+$Z\gets X^y$\\
+Return $Z$
+}
+\vspace{-1ex}
+\label{fig-attack}
+\end{figure}
+
+Now we can calculate $\Adv^{\text{surv}}_\Pi(\mathbb{BB})$, by first noting that: 
+
+\begin{math}
+\begin{array}{lllllllll}
+\Pr[\gameSURV_{G,g,\Pi}^{\mathbb{BB}}\Rightarrow 1] &=&\Pr[(Z=Z')], &\text{for $Z,Z'$ defined in $\gameSURV$}&\\
+&=&\Pr[g^{x(F_2(K,g^x)}=(g^x)^{H(K,g^x)}]&\text{for $F_2$ defined above}&\\
+&=&\Pr[g^{x(H(K,g^x))}=(g^x)^{H(K,g^x)}]&\\
+&=&\Pr[g^{x(H(K,g^x))}=g^{xH(K,g^x)}]&\\
+&=&1
+\end{array}
+\end{math} 
+
+and also that 
+
+\begin{math}
+\begin{array}{lllllllll}
+\Pr[\gameDH_{G,g}^{\mathbb{BB}}\Rightarrow 1] &=&\Pr[g^{xy}=(g^x)^{H(K,g^x)}\mid x,y \in \mathbf{Z}_m, K\in\mathcal{K}]&\\
+&=&\Pr[g^{xy}=g^{x(H(K,g^x))}\mid x,y \in \mathbf{Z}_m, K\in\mathcal{K}]&\\
+&=&\Pr[xy=x(H(K,g^x))\mid x,y \in \mathbf{Z}_m],\quad\text{(where multiplication is done in $\mathbf{Z}_m$)}&\\
+&=&\Pr[(y=H(K,g^x))\land (x\neq 0)\mid x,y \in \mathbf{Z}_m]+\Pr[x=0\mid x \in \mathbf{Z}_m]&&\\
+&=&\frac{1}{m}+\frac{1}{m}&&\\
+&=&\frac{2}{m}&&\\
+
+\end{array}
+\end{math} 
+
+Therefore, 
+
+$$\Adv^{\text{surv}}_\Pi(\mathbb{BB})=1-\frac{2}{m}$$
+
+And now we study $\Adv^{\text{detect}}_\Pi(\mathbb{D})$. We give the following theorem:
+
+\begin{theorem}
+For every detection adversary $\mathbb{D}$, we can construct PRF-adversary $\mathbb{D}'$ such that: 
+
+$$\Adv^{\text{detect}}_\Pi(\mathbb{D})=\Adv^{\text{prf}}_H(\mathbb{D'})$$
+
+Also, if $\mathbb{D}$ runs in time $T$, then $\mathbb{D}'$ runs in time $\mathcal{O}(T+t+m+\max_{K\in\mathcal{K}}|K|)$, where $t$ is the time taken to make a query to the $\mathbf{Fn}$ oracle in the PRF game.
+\end{theorem}
+\pagebreak
+\begin{proof}
+Consider the following adversary: 
+
+\begin{figure}[h]
+\oneCol{.32}
+{
+\advName{$\mathbb{D'}$}
+$x\getsr \mathbf{Z}_m$\\
+$y\gets \mathbf{Fn}(g^x)$\\
+$b\gets \mathbb{D}(x,y)$\\
+Return $b$
+}
+\vspace{-1ex}
+\label{fig-attack}
+\end{figure}
+
+To prove this theorem, we make the following claims: 
+
+\begin{enumerate}
+\item $\Pr[\gameDETECT_{G,g,\Pi}^{\mathbb{D}}\Rightarrow 1] = \Pr[\gameREAL_H^{\mathbb{D'}}\Rightarrow 1]$
+\item $\Pr[\gameDETDH_{G,g}^{\mathbb{D}}\Rightarrow 1] = \Pr[\gameRAND_H^{\mathbb{D'}}\Rightarrow 1]$
+\end{enumerate}
+
+Then, we have that 
+
+\begin{math}
+\begin{array}{lllllllll}
+\Adv^{\text{detect}}_\Pi(\mathbb{D})&=&\Pr[\gameDETECT_{G,g,\Pi}^{\mathbb{D}}\Rightarrow 1] - \Pr[\gameDETDH_{G,g}^{\mathbb{D}}\Rightarrow 1]\\
+&=&\Pr[\gameREAL_H^{\mathbb{D'}}\Rightarrow 1] - \Pr[\gameRAND_H^{\mathbb{D'}}\Rightarrow 1]\\
+&=&\Adv^{\text{prf}}_H(\mathbb{D}')\
+\end{array}
+\end{math} 
+
+as desired. 
+
+Now what is left is to prove the claims made. For any particular $x$ randomly selected in the $\gameREAL$ game and $\gameDETECT$ game: 
+
+\begin{align*}
+(\gameREAL_H^{\mathbb{D'}}\Rightarrow 1) \land (x\text{ is selected in game }\gameREAL) &\iff&\\ (\mathbb{D}(x,H(K,g^x)) \text{ returns 1}) 
+&\iff&\\ (\gameDETECT_{G,g,\Pi}^{\mathbb{D}}\Rightarrow 1)\land (x\text{ is selected in game }\gameDETECT)
+\end{align*}
+
+therefore, 
+
+$$\Pr[\gameDETECT_{G,g,\Pi}^{\mathbb{D}}\Rightarrow 1] = \Pr[\gameREAL_H^{\mathbb{D'}}\Rightarrow 1]$$
+
+this shows claim 1. 
+
+Next, note that, for any particular $(x,y)$ randomly selected in the $\gameRAND$ game and $\gameDETDH$ game: 
+
+\begin{align*}
+(\gameRAND_H^{\mathbb{D'}}\Rightarrow 1) \land ((x,y)\text{ is selected in game }\gameRAND) &\iff&\\ (\mathbb{D}(x,H(K,y)) \text{ returns 1}) 
+&\iff&\\ (\gameDETDH_{G,g,\Pi}^{\mathbb{D}}\Rightarrow 1)\land ((x,y)\text{ is selected in game }\gameDETDH)
+\end{align*}
+
+therefore, 
+
+$$\Pr[\gameDETDH_{G,g}^{\mathbb{D}}\Rightarrow 1] = \Pr[\gameRAND_H^{\mathbb{D'}}\Rightarrow 1]$$
+
+this shows claim 2.
+
+\end{proof}
+
+

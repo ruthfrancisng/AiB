@@ -1,0 +1,90 @@
+% !TEX root = main.tex
+\pagebreak
+\section{Theorems}
+
+We aim to prove the following theorem: 
+
+\begin{theorem}
+Given an adversary $\mathbb{BB}$ that makes $q$ queries to the $\mathtt{Key}$ oracle and runs in time $T$we can construct discrete log adversary $\mathbb{C}$ and detection adversary $\mathbb{D}$ each making $O(q)$ queries to the $\mathtt{Dlog}$ and $\mathtt{Dec}$ oracle respectively, and running in time $O(T)$ such that the following equation holds: 
+
+$$\Adv^\text{surv}_{G,g,\Pi}(\mathbb{BB})\le \Adv^\text{det}_{G,g,\Pi}(\mathbb{D}) + \Adv^\text{dlog}_{G,g}(\mathbb{C})$$
+
+\end{theorem}
+
+\hrulefill
+
+Here we formalize the intuition behind the theorem. We assume that $F(K)$ picks $x$ uniformly at random from a subset of $\mathbf{Z}_m$ that can be key-dependent. We will call this subset $\mathcal{F}_K$. Assume that for all $K,K'\in\mathcal{K}$ we have that $|\mathcal{F}_K|=|\mathcal{F}_{K'}|$.
+
+First, we use this $\gameSURV$ game in place of the one above: 
+
+\begin{figure}[h]
+\oneCol{.35}
+{
+\gameName{$\gameSURV2_{G,g,\Pi}^{\mathbb{BB}}$}
+$K\getsr \mathcal{K}$\\
+$S\gets \emptyset$\\
+$x\getsr \mathbb{BB}^{\mathtt{Key}}(K)$\\
+Return $(x\in S)$\\
+\proc{$\mathtt{Key}(K)$}
+$x\getsr F(K)$\\
+$X\gets g^x$\\
+$S\gets S\cup \{x\}$\\
+Return $X$
+}
+\vspace{-1ex}
+\end{figure}
+
+Next, consider any $\gameSURV2$ adversary $\mathbb{BB}$ that makes $n$ queries to the $\mathtt{Key}$ oracle. We can construct $\gameDLOG$ adversary $\mathbb{C}$ that also makes $n$ queries to the $\mathtt{Dlog}$ oracle and runs in the same amount of time. 
+
+\begin{figure}[h]
+\oneCol{.35}
+{
+\advName{$\mathbb{C}$}
+$K\getsr\mathcal{K}$\\
+$c\getsr\mathbb{BB}^{\mathtt{SimKey}}(K)$\\
+Return $c$\\
+\proc{$\mathtt{SimKey}$}
+$X\getsr\mathtt{Dlog()}$
+}
+\end{figure}
+
+Then, denoting the returned values for the $n$ queries to the $\mathtt{Key}$ oracle made by $\mathbb{BB}$ as $X_1,X_2\dots X_n$:
+
+$$\Adv^\text{surv2}_{G,g,\Pi}(\mathbb{BB}) = \frac{1}{|\mathcal{F}_K|^n}\sum_{(x_1,x_2,\dots x_n)\in \mathcal({F}_K)^n}\Pr[\gameSURV2^\mathbb{BB}_{G,g,\Pi}\Rightarrow 1 \mid \forall i.X_i=g^{x_i}]$$
+
+Also, 
+
+\begin{align}
+\Adv^\text{dlog}_{G,g}(\mathbb{C}) &= \sum_{(x_1,x_2,\dots x_n)\in (\mathbf{Z}_m)^n}\Pr[\forall i.X_i=g^{x_i}]\Pr[\gameSURV2^\mathbb{BB}_{G,g,\Pi}\Rightarrow 1 \mid \forall i.X_i=g^{x_i}]\\
+&\ge \frac{1}{m^n}\sum_{(x_1,x_2,\dots x_n)\in (\mathcal{F}_K)^n}\Pr[\gameSURV2^\mathbb{BB}_{G,g,\Pi}\Rightarrow 1 \mid \forall i.X_i=g^{x_i}]\\
+&=\Big(\frac{|\mathcal{F}_K|}{m}\Big)^n\Adv^\text{surv2}_{G,g,\Pi}(\mathbb{BB})
+\end{align}
+
+Now consider the following $\gameDETECT$ adversary: 
+
+\begin{figure}[h]
+\oneCol{.35}
+{
+\advName{$\mathbb{D}$}
+For $(i=1,2,\dots q)\{\\
+X_i\gets \mathtt{Det()}\}$\\
+$\{Y_i\}_{i=1}^q\gets \mathtt{QuickSort}\{X_i\}_{i=1}^q$\\
+For $(i=1,2,\dots (q-1))\{$\\
+If $(Y_i=Y_{i+1})\{$\\
+Return $1\}$\\
+Return 0
+}
+\end{figure}
+
+We can also see that by the birthday paradox, we can calculate the detection advantage. Here, $C(N,q)$ is the formula taken from class (on PRFs): 
+
+\begin{align}
+\Adv^\text{det}_{G,g,\Pi}(\mathbb{D}) &= C(|\mathcal{F}_K|,q)-C(m,q)\\
+&\ge\Big(\frac{3(q)(q-1)}{10|\mathcal{F}_K|}\Big)-\Big(\frac{(q)(q-1)}{2m}\Big) &\text {where } 1\le q \le \sqrt{m}\\
+&=(q)(q-1)(0.3|\mathcal{F}_K|^{-1}-0.5m^{-1}) &\text {where } 1\le q \le \sqrt{m}
+\end{align}
+
+Notice then that as $|\mathcal{F}_K|$ tends toward $m$, from (3), then the discrete log advantage of $\mathbb{C}$ tends towards the surveillance advantage of $\mathbb{BB}$. However, from (6), as $|\mathcal{F}_K|$ tends towards $1$, the detection advantage of $\mathbb{D}$ increases. 
+
+To adapt this intuition to the theorem proposed, we will need to address $\mathcal{F}_K$ that is not sampled uniformly by $F$, and may have a different size depending on $K$. We will also need to change the statement of the theorem, so that the inequality matches the calculations we do. Finally, we need to address the relationship between $\gameSURV$ and $\gameSURV2$, which were assumed to be comparable because the ``most efficient ways to break Diffie Hellman at present is by defeating the discrete log problem'' (quote from Wikipedia). There seems to be work on this by den Boer et. al (1988), but I have not looked into it.
+

@@ -1,0 +1,21 @@
+% !TEX root = main.tex
+
+\section{Proposed Fix}\label{sec-fix}
+The proposed for the ELF definition is fairly simple, just replacing the non-negligible function $\epsilon$ with the inverse of polynomial function $g$. This is shown in the definition below with the text in blue showing where the changes in the definition occur.
+
+I believe the results of Zhandry's paper can be preserved with this change. The proof of his construction of an ELF had an error where the inverse of a non-negligible function was treated as polynomial which is fixed by this change.
+
+His proofs for constructions based on ELFs require larger reformulating, but I believe they can still be done with this new definition.
+
+\heading{My Translation.}\\
+An ELF consists of two functions. Randomized algorithm $\ek\getsr\ELFGen(1^\lambda,r)$ where $\langle r\rangle \in [2^\lambda]$ (i.e. $r\in\bits^\lambda$). Deterministic algorithm $y \gets \ELFEv(1^\lambda,\ek,x)$ which maps input $x\in\bits^{\lambda}$ to $y\in\bits^{g(\lambda)}$, where $g$ is a polynomial parameter of the scheme.
+
+\begin{itemize}
+	\item For $\ek\getsr\ELFGen(1^\lambda,r)$ the running time of $\ELFEv(1^\lambda,\ek,x)$ is polynomial in $\lambda$ and independent of $r$.
+	\item There exists a negligible function $\negl_1$ such that $\Pr[|[\ELFEv(\ek,\cdot)]|\neq 2^\lambda : \ek\getsr\ELFGen(1^\lambda,1^\lambda)]\leq \negl_1(\lambda)$.
+	\item There exists a negligible function $\negl_2$ such that for all $r \in \bits^\lambda$, $\Pr[|[\ELFEv(\ek,\cdot)]| > \langle r\rangle : \ek\getsr\ELFGen(1^\lambda,r) ]\leq \negl_2(\lambda)$.
+	\item For any polynomial running time $p$ and \textcolor{blue}{polynomial $g$}, there is a polynomial $q$ such that: for any adversary $\advA$ running in time at most $p$, all $\lambda\in\mathbb{N}$, and any $r$ with $\langle r \rangle \in [q(\lambda), 2^\lambda]$, we have that $\AdvELF{\ELF,\advA}{\lambda,r} \allowbreak =  \allowbreak\Pr[\gameREAL_{\ELF}^{\advA}(\lambda)]-\Pr[\gameLOSSY_{\ELF}^{\advA}(\lambda,r)]\allowbreak \le  \allowbreak \textcolor{blue}{1/g(\lambda)}$, where games $\gameREAL$ and $\gameLOSSY$ are defined in \figref{fig-elfgame}.
+\end{itemize}
+
+
+
